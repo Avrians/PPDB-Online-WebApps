@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/daftar', function () {
     return 'Ini adalah halaman daftar';
@@ -28,6 +27,6 @@ Route::get('/hasil', function () {
 
 // Route Halaman admin
 Route::middleware(['auth'])->group(function() {
-    
+
 });
 
