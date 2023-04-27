@@ -28,6 +28,6 @@ Route::get('/hasil', function () {
 
 // Route Halaman admin
 Route::middleware(['auth'])->group(function() {
-
+    
 });
 
