@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/daftar', function () {
+    return 'Ini adalah halaman daftar';
+});
+
+Route::get('/hasil', function () {
+    return 'ini adalah halaman hasil';
+});
+
+
+// Route Halaman admin
+Route::middleware(['auth'])->group(function() {
+
+});
+
