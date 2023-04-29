@@ -1,10 +1,11 @@
 <footer id="footer" style="margin-top: 100px;">
+  
   <div class="container d-md-flex py-4">
 
-    <div class="mr-md-auto text-center text-md-left">
+    <div class="me-md-auto text-center text-md-start">
       <div class="copyright">
         &copy; Copyright 2023 <strong><span>SMK Nusa Bangsa</span></strong>. All Rights Reserved <br>
-          Powered By. Avriansyah Bahtiar
+        Powered By. <a>Avriansyah Bahtiar</a>
       </div>
     </div>
     
