@@ -3,7 +3,7 @@
 
     <div class="mr-md-auto text-center text-md-left">
       <div class="copyright">
-        &copy; Copyright 2023 <strong><span>SMK Harapan Bangsa</span></strong>. All Rights Reserved <br>
+        &copy; Copyright 2023 <strong><span>SMK Nusa Bangsa</span></strong>. All Rights Reserved <br>
           Powered By. Avriansyah Bahtiar
       </div>
     </div>
