@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/daftar', function () {
-    return 'Ini adalah halaman daftar';
-});
+Route::get('/daftar', [RegisterController::class, 'index']);
 
 Route::get('/hasil', function () {
     return 'ini adalah halaman hasil';
