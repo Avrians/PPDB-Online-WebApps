@@ -15,9 +15,9 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header - Navbar ======= -->
   @include('layouts.navbar')
-  <!-- End Header -->
+  <!-- End Navbar -->
 
   <!-- ======= Content ======= -->
   @yield('content')
