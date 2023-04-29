@@ -16,7 +16,7 @@
 <body>
 
   <!-- ======= Header - Navbar ======= -->
-  @include('layouts.navbar')
+  @include('layouts.navbarDaftar')
   <!-- End Navbar -->
 
   <main id="main">

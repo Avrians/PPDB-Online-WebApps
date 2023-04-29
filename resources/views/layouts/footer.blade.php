@@ -1,4 +1,4 @@
-<footer id="footer" style="margin-top: 100px;">
+<footer id="footer">
   
   <div class="container d-md-flex py-4">
 
