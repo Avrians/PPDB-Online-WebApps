@@ -19,8 +19,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/daftar', [RegisterController::class, 'index']);
 
-Route::get('/hasil', function () {
-    return 'ini adalah halaman hasil';
+Route::get('/admin', function () {
+    return view('admin.index');
 });
 
 
