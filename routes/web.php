@@ -23,6 +23,10 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+
 
 // Route Halaman admin
 Route::middleware(['auth'])->group(function() {
