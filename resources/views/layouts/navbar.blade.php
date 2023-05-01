@@ -10,7 +10,7 @@
             <li><a class="nav-link scrollto active" href="/">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
             <li><a class="nav-link scrollto" href="#services">Fasilitas</a></li>
-            <li><a class="nav-link scrollto " href="#portfolio">Prestasi</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">Prestasi</a></li>
             <li><a class="nav-link scrollto" href="#team">Guru</a></li>
             <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
             <li><a class="getstarted scrollto" href="/daftar">Daftar</a></li>
