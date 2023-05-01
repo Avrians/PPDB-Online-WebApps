@@ -8,7 +8,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="/">Home</a></li>
-            <li><a class="nav-link scrollto" href="#">Hasil Pendaftaran</a></li>
+            <li><a class="nav-link scrollto" href="/hasil">Hasil Pendaftaran</a></li>
             <li><a class="getstarted scrollto" href="/daftar">Daftar</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>

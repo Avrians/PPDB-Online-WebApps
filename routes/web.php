@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/daftar', [RegisterController::class, 'index']);
+Route::get('/hasil', [RegisterController::class, 'hasil']);
 
 Route::get('/admin', function () {
     return view('admin.index');

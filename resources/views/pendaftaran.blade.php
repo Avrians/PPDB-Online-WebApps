@@ -4,7 +4,7 @@
 
 @section('content')
 
-        <div class="container">
+        <div class="container mb-5">
 
             <h2 class="text-center mt-5 mb-3">Tata Cara PPDB Online</h2>
             <div class="row">

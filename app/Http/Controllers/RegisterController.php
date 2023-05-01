@@ -10,6 +10,10 @@ class RegisterController extends Controller
         return view('pendaftaran');
     }
 
+    public function hasil() {
+        return view('hasilpendaftaran');
+    }
+
     public function store(Request $request) {
 
     }
