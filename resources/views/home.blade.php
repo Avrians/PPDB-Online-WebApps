@@ -126,7 +126,8 @@
           <div class="col-lg-4">
             <div class="section-title" data-aos="fade-right">
               <h2>Fasilitas</h2>
-              <p>Magnam dolores commodi suscipit nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <p>Fasilitas sekolah peranannya sangat penting dalam mendukung kegiatan belajar mengajar (KBM).Fasilitas belajar merupakan sarana dan prasarana pembelajaran. Prasarana adalah alat yang secara tidak langsung membantu untuk mencapai tujuan dalam pendidikan,sementara sarana artinya alat langsung untuk mencapai tujuan pendidikan, Sarana dan Prasarana di SMK Nusa Bangsa sangat lengkat seperti lokasi, gedung sekolah, lapangan olahraga, smart class, papan tulis, buku, laboratorium, perpustakaan dan lain-lain.
+              </p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -176,16 +177,16 @@
 
         <div class="section-title" data-aos="fade-left">
           <h2>Prestasi</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Bisa meraih prestasi terbaik di bidang akademis maupun non akademis merupakan kebanggan tersendiri bagi setiap siswa. Terdapat macam-macam prestasi akademis maupun non akademis yang dapat diraih siswa sesuai dengan minat dan bakat mereka. Melalui pembinaan yang tepat maka bukan tidak mungkin seorang siswa akan mampu mencapai prestasi terbaiknya.</p>
+          <p>Dibawah ini adalah bukti dokumentasi prestasi yang didapatkan oleh sekolah kami :</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Akademik</li>
+              <li data-filter=".filter-card">Non Akademik</li>
             </ul>
           </div>
         </div>
@@ -200,20 +201,6 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -242,20 +229,6 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -304,20 +277,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -331,7 +290,7 @@
           <div class="col-lg-4">
             <div class="section-title" data-aos="fade-right">
               <h2>Guru & Staff</h2>
-              <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+              <p>Salah satu hal penting untuk bisa meningkatkan kualitas pendidikan sebuah negara adalah kualitas gurunya. Mengapa? Guru adalah fasilitator pendidikan. Guru menjadi garda terdepan dalam meningkatkan kualitas pendidikan. Guru lah yang memberikan pendidikan kepada siswa-siswanya. Oleh karena itu, SMK Nusa Bangsa semaksimal mungkin untuk dapat menghadirkan guru-guru terbaik dalam bidang nya</p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -420,30 +379,31 @@
           <div class="col-lg-4" data-aos="fade-right">
             <div class="section-title">
               <h2>Kontak</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <p>Untuk info lebih lanjut mengenai pendaftaran peserta didik baru, kerjasama atau yang lain nya bisa menghubungi kontak yang tercantum atau bisa langsung ke sekolah SMK Nusa Bangsa</p>
             </div>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4057470.0866813553!2d106.33973250299309!3d-6.724243758367419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708d44b5053313%3A0xf40a52889ebde16a!2sSMK%20Nusa%20Bangsa!5e0!3m2!1sid!2sid!4v1682912942151!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
             <div class="info mt-4">
               <i class="icofont-google-map"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h4>Lokasi:</h4>
+              <p>SMK Nusa Bangsa</p>
+              <p>Jl. Teguhan, Wringin Jajar, Kec. Mranggen, Kabupaten Demak, Jawa Tengah 59567</p>
             </div>
             <div class="row">
               <div class="col-lg-6 mt-4">
                 <div class="info">
                   <i class="icofont-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>admin@smknusabangsa.sch.id</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="info w-100 mt-4">
                   <i class="icofont-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>628 12 7421 9874</p>
                 </div>
               </div>
             </div>
