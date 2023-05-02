@@ -14,7 +14,11 @@ class PendaftaranController extends Controller
      */
     public function index()
     {
-        //
+        return view('pendaftaran');
+    }
+
+    public function hasil() {
+        return view('hasilpendaftaran');
     }
 
     /**
