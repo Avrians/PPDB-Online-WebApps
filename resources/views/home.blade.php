@@ -243,10 +243,10 @@
                             <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Gold Mendal</h4>
-                                <p>App</p>
+                                <p class="text-center">Mendali Emas Olimpiade Fisika Tingkat Provinsi Tahun 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                        class="portfolio-lightbox" title="Mendali Emas Olimpiade Fisika Tingkat Provinsi Tahun 2023"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
