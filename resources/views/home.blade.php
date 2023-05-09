@@ -178,7 +178,8 @@
                                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
                                     <div class="icon"><i class="bx bx-laptop"></i></div>
                                     <h4><a href="">15 Laboratorium</a></h4>
-                                    <p>Di SMK Nusa Bangsa Memiliki 15 Laboratorium untuk menunjang pendidikan siswa, mulai dari 10 Lab Komputer, 2 Lab Bahasa, dan 3 Lab IPA</p>
+                                    <p>Di SMK Nusa Bangsa Memiliki 15 Laboratorium untuk menunjang pendidikan siswa, mulai
+                                        dari 10 Lab Komputer, 2 Lab Bahasa, dan 3 Lab IPA</p>
 
                                 </div>
                             </div>
@@ -227,8 +228,8 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
+                                <h4>Juara 3 Olimpiade Matematika</h4>
+                                <p class="text-center">Juara 3 Olimpiade Matematika Tingkat Provinsi Tahun 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
