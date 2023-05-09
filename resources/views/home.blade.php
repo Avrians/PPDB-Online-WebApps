@@ -256,11 +256,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
+                                <h4>Juara 2</h4>
+                                <p class="text-center">Juara 2 Badminthon Pekan Olahraga Daerah Tingakat Kab. Tahun 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                        class="portfolio-lightbox" title="Juara 2 Badminthon Pekan Olahraga Daerah Tingakat Kab. Tahun 2023"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -270,11 +270,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
+                                <h4>Juara 1</h4>
+                                <p>Juara 1 Lomba MTQ FAI Education Fair 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                        class="portfolio-lightbox" title="Juara 1 Lomba MTQ FAI Education Fair 2023"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -284,11 +284,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
+                                <h4>Juara 1</h4>
+                                <p>Juara 1 Lomba Voli STHIP CUP 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                        class="portfolio-lightbox" title="Juara 1 Lomba Voli STHIP CUP 2023"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -298,11 +298,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
+                                <h4>Juara 2</h4>
+                                <p class="text-center">Juara 2 Basket Pekan Olahraga Daerah Tingakat Kab. Tahun 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                        class="portfolio-lightbox" title="Juara 2 Basket Pekan Olahraga Daerah Tingakat Kab. Tahun 2023"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
