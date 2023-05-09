@@ -228,12 +228,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Juara 3 Olimpiade Matematika</h4>
+                                <h4>Juara 3</h4>
                                 <p class="text-center">Juara 3 Olimpiade Matematika Tingkat Provinsi Tahun 2023</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                        class="portfolio-lightbox" title="Juara 3 Olimpiade Matematika"><i class="bx bx-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -243,12 +242,11 @@
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>App 2</h4>
+                                <h4>Gold Mendal</h4>
                                 <p>App</p>
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +261,6 @@
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +275,6 @@
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +289,6 @@
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +303,6 @@
                                 <div class="portfolio-links">
                                     <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
                                         class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
