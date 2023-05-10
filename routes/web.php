@@ -22,11 +22,21 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/daftar', [PendaftaranController::class, 'index']);
 Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
-Route::get('/admin', function () {
-    return view('admin.index');
-});
-Route::get('/mendaftar', function () {
-    return view('admin.mendaftar');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+    Route::get('/mendaftar', function () {
+        return view('admin.mendaftar');
+    });
+
+    Route::get('/gagal', function () {
+        return view('admin.gagal');
+    });
+
+    Route::get('/diterima', function () {
+        return view('admin.diterima');
+    });
 });
 
 Route::get('/login', function () {

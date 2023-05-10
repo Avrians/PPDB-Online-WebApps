@@ -100,7 +100,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Daftar Mahasiswa Yang Mendaftar</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Daftar Siswa Yang Mendaftar</h6>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -139,9 +139,3 @@
 
     </div>
 @endsection
-@push('script')
-    <!-- Page level plugins -->
-    <script src="{{ asset('sbadmin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('sbadmin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
-    <script src="{{ asset('sbadmin/js/demo/datatables-demo.js') }}"></script>
-@endpush
