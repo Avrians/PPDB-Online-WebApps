@@ -4,7 +4,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-            <h1>Selamat Datang di SMK Nusa Bangsa</h1>
+            <h1>Selamat Datang di SMA Nusa Bangsa</h1>
             <h2>Raih masa depan gemilang dan penuh dengan haparan cerah disini</h2>
             <a href="/daftar" class="btn-get-started scrollto">Daftar Sekarang</a>
         </div>
@@ -150,7 +150,7 @@
                             <p>Fasilitas sekolah peranannya sangat penting dalam mendukung kegiatan belajar mengajar
                                 (KBM).Fasilitas belajar merupakan sarana dan prasarana pembelajaran. Prasarana adalah alat
                                 yang secara tidak langsung membantu untuk mencapai tujuan dalam pendidikan,sementara sarana
-                                artinya alat langsung untuk mencapai tujuan pendidikan, Sarana dan Prasarana di SMK Nusa
+                                artinya alat langsung untuk mencapai tujuan pendidikan, Sarana dan Prasarana di SMA Nusa
                                 Bangsa sangat lengkat seperti lokasi, gedung sekolah, lapangan olahraga, smart class, papan
                                 tulis, buku, laboratorium, perpustakaan dan lain-lain.
                             </p>
@@ -162,7 +162,7 @@
                                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
                                     <div class="icon"><i class="bx bxl-dribbble"></i></div>
                                     <h4><a href="">Ruang Kelas Ber-AC</a></h4>
-                                    <p>Di SMK Nusa Bangsa semua kelas sudah ber-AC, nyaman, bersih dan fasilitas lengkap</p>
+                                    <p>Di SMA Nusa Bangsa semua kelas sudah ber-AC, nyaman, bersih dan fasilitas lengkap</p>
                                 </div>
                             </div>
 
@@ -178,7 +178,7 @@
                                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
                                     <div class="icon"><i class="bx bx-laptop"></i></div>
                                     <h4><a href="">15 Laboratorium</a></h4>
-                                    <p>Di SMK Nusa Bangsa Memiliki 15 Laboratorium untuk menunjang pendidikan siswa, mulai
+                                    <p>Di SMA Nusa Bangsa Memiliki 15 Laboratorium untuk menunjang pendidikan siswa, mulai
                                         dari 10 Lab Komputer, 2 Lab Bahasa, dan 3 Lab IPA</p>
 
                                 </div>
@@ -324,7 +324,7 @@
                             <p>Salah satu hal penting untuk bisa meningkatkan kualitas pendidikan sebuah negara adalah
                                 kualitas gurunya. Mengapa? Guru adalah fasilitator pendidikan. Guru menjadi garda terdepan
                                 dalam meningkatkan kualitas pendidikan. Guru lah yang memberikan pendidikan kepada
-                                siswa-siswanya. Oleh karena itu, SMK Nusa Bangsa semaksimal mungkin untuk dapat menghadirkan
+                                siswa-siswanya. Oleh karena itu, SMA Nusa Bangsa semaksimal mungkin untuk dapat menghadirkan
                                 guru-guru terbaik dalam bidang nya</p>
                         </div>
                     </div>
@@ -419,7 +419,7 @@
                         <div class="section-title">
                             <h2>Kontak</h2>
                             <p>Untuk info lebih lanjut mengenai pendaftaran peserta didik baru, kerjasama atau yang lain nya
-                                bisa menghubungi kontak yang tercantum atau bisa langsung ke sekolah SMK Nusa Bangsa</p>
+                                bisa menghubungi kontak yang tercantum atau bisa langsung ke sekolah SMA Nusa Bangsa</p>
                         </div>
                     </div>
 
@@ -430,7 +430,7 @@
                         <div class="info mt-4">
                             <i class="icofont-google-map"></i>
                             <h4>Lokasi:</h4>
-                            <p>SMK Nusa Bangsa</p>
+                            <p>SMA Nusa Bangsa</p>
                             <p>Jl. Teguhan, Wringin Jajar, Kec. Mranggen, Kabupaten Demak, Jawa Tengah 59567</p>
                         </div>
                         <div class="row">
@@ -438,7 +438,7 @@
                                 <div class="info">
                                     <i class="icofont-envelope"></i>
                                     <h4>Email:</h4>
-                                    <p>admin@smknusabangsa.sch.id</p>
+                                    <p>admin@smanusabangsa.sch.id</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">

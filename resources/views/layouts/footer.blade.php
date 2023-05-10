@@ -4,7 +4,7 @@
 
     <div class="me-md-auto text-center text-md-start">
       <div class="copyright">
-        &copy; Copyright 2023 <strong><span>SMK Nusa Bangsa</span></strong>. All Rights Reserved <br>
+        &copy; Copyright 2023 <strong><span>SMA Nusa Bangsa</span></strong>. All Rights Reserved <br>
         Powered By. <a>Avriansyah Bahtiar</a>
       </div>
     </div>

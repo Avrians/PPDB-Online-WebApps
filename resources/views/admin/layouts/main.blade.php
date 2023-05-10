@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SMK Nusa Bangsa | Dashboard</title>
+    <title>SMA Nusa Bangsa | Dashboard</title>
 
     @include('admin.layouts.style')
     @stack('style')
