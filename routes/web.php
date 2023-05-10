@@ -37,6 +37,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/diterima', function () {
         return view('admin.diterima');
     });
+
+    Route::get('/kategori', function () {
+        return view('admin.kategori');
+    });
 });
 
 Route::get('/login', function () {
