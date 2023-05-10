@@ -24,7 +24,7 @@
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                <i class="fas fa-calendar fa-2x text-primary"></i>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">1215</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                <i class="fas fa-users fa-2x text-warning"></i>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                <i class="fas fa-user-plus fa-2x text-info"></i>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">715</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                <i class="fas fa-minus-circle fa-2x text-danger"></i>
                             </div>
                         </div>
                     </div>

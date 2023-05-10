@@ -22,7 +22,7 @@
     <hr class="sidebar-divider">
 
 
-    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- Nav Item - Data Peserta PPDB Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
@@ -39,11 +39,40 @@
         </div>
     </li>
 
-    <!-- Nav Item - Charts -->
+    <!-- Nav Item - Kategori -->
     <li class="nav-item">
         <a class="nav-link" href="/admin/kategori">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Kategori</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Results
+    </div>
+
+    <!-- Nav Item - Decision -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Decision Matrix</span></a>
+    </li>
+
+    <!-- Nav Item - Normalization -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Normalization</span></a>
+    </li>
+
+    <!-- Nav Item - Rank -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Rank</span></a>
     </li>
 
     <!-- Sidebar Toggler (Sidebar) -->
