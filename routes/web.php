@@ -25,6 +25,9 @@ Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 Route::get('/admin', function () {
     return view('admin.index');
 });
+Route::get('/mendaftar', function () {
+    return view('admin.mendaftar');
+});
 
 Route::get('/login', function () {
     return view('login');
