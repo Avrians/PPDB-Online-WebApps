@@ -41,6 +41,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/kategori', function () {
         return view('admin.kategori');
     });
+
+    Route::get('/tambahdata', function () {
+        return view('admin.tambahdata');
+    });
 });
 
 Route::get('/login', function () {

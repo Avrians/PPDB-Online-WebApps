@@ -16,7 +16,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">Daftar Siswa Yang Mendaftar</h6>
             </div>
             <div class="card-body">
-                <a href="#" class="btn btn-primary mb-3">Tambah Data</a>
+                <a href="/admin/tambahdata" class="btn btn-primary mb-3">Tambah Data</a>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
@@ -35,7 +35,7 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>Hope Fuentes</td>
+                            <td>1</td>
                             <td>Secretary</td>
                             <td>San Francisco</td>
                             <td>41</td>
@@ -45,10 +45,17 @@
                             <td>San Francisco</td>
                             <td>41</td>
                             <td>2010/02/12</td>
-                            <td>$109,850</td>
+                            <td>
+                                <a href="#" class="btn btn-warning mr-2">
+                                    Edit
+                                </a>
+                                <a href="#" class="btn btn-danger mr-2">
+                                    Hapus
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Finn Camacho</td>
+                            <td>2</td>
                             <td>Support Engineer</td>
                             <td>San Francisco</td>
                             <td>47</td>
@@ -58,7 +65,14 @@
                             <td>San Francisco</td>
                             <td>41</td>
                             <td>2010/02/12</td>
-                            <td>$109,850</td>
+                            <td>
+                                <a href="#" class="btn btn-warning mr-2">
+                                    Edit
+                                </a>
+                                <a href="#" class="btn btn-danger mr-2">
+                                    Hapus
+                                </a>
+                            </td>
                         </tr>
                         </tbody>
                     </table>

@@ -107,29 +107,47 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Asal Sekolah</th>
+                                <th>Jurusan</th>
+                                <th>No HP</th>
+                                <th>Email</th>
+                                <th>Nilai MTK</th>
+                                <th>Nilai B.Ind</th>
+                                <th>Nilai B.Ing</th>
+                                <th>Jarak (km)</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tr>
-                            <td>Hope Fuentes</td>
+                            <td>1</td>
                             <td>Secretary</td>
                             <td>San Francisco</td>
                             <td>41</td>
                             <td>2010/02/12</td>
                             <td>$109,850</td>
+                            <td>Secretary</td>
+                            <td>San Francisco</td>
+                            <td>41</td>
+                            <td>2010/02/12</td>
+                            <td>$109,850</td>
+                            <td>$109,850</td>
                         </tr>
                         <tr>
-                            <td>Finn Camacho</td>
+                            <td>2</td>
                             <td>Support Engineer</td>
                             <td>San Francisco</td>
                             <td>47</td>
                             <td>2009/07/07</td>
                             <td>$87,500</td>
+                            <td>Secretary</td>
+                            <td>San Francisco</td>
+                            <td>41</td>
+                            <td>2010/02/12</td>
+                            <td>$109,850</td>
+                            <td>$109,850</td>
                         </tr>
                         </tbody>
                     </table>

@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>Hope Fuentes</td>
+                            <td>1</td>
                             <td>Secretary</td>
                             <td>San Francisco</td>
                             <td>41</td>
@@ -47,7 +47,7 @@
                             <td>$109,850</td>
                         </tr>
                         <tr>
-                            <td>Finn Camacho</td>
+                            <td>2</td>
                             <td>Support Engineer</td>
                             <td>San Francisco</td>
                             <td>47</td>
