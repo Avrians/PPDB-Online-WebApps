@@ -16,6 +16,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">Daftar Siswa Yang Mendaftar</h6>
             </div>
             <div class="card-body">
+                <a href="#" class="btn btn-primary mb-3">Tambah Data</a>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>

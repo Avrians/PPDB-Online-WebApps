@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('bobot');
+            $table->enum('jenik_kategori', ['Cost', 'Benefit']);
             $table->timestamps();
         });
     }
