@@ -55,13 +55,25 @@
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Nama</label>
-                                <input type="text" name="nama" class="form-control" autocomplete="off" autofocus>
+                                <input type="text" name="nama" class="form-control" autocomplete="off" autofocus required>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">NISN</label>
+                                <input type="text" name="nama" class="form-control" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">No Telepon</label>
-                                <input type="number" name="no_telp" class="form-control" autocomplete="off">
+                                <input type="number" name="no_telp" class="form-control" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
@@ -93,16 +105,17 @@
                         </div>
                         <div class="col-12 mb-3">
                             <div class="form-group">
-                                <label class="form-label">Alamat</label>
-                                <textarea name="alamat" rows="10" class="form-control"></textarea>
+                                <label class="form-label">Jarak ke Sekolah</label>
+                                <input type="text" name="jarak_sekolah" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Jurusan</label>
                                 <select name="id_jurusan" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
+                                    <option value="">IPA</option>
+                                    <option value="">IPS</option>
+                                    <option value="">Bahasa</option>
                                 </select>
                             </div>
                         </div>
@@ -110,67 +123,15 @@
                             <div class="form-group">
                                 <label class="form-label">Jenis Kelamin</label>
                                 <select name="id_jenis_kelamin" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <h1 class="mt-5">Biodata Orang Tua</h1>
-                            <hr>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">Nama Orang Tua (Ayah)</label>
-                                <input type="text" name="nama_ayah" class="form-control" autocomplete="off" autofocus>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">Pekerjaan Ayah</label>
-                                <select name="id_pekerjaan_ayah" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">Penghasilan Ayah</label>
-                                <select name="id_penghasilan_ayah" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
+                                    <option value="">Laki-laki</option>
+                                    <option value="">Perempuan</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
                             <div class="form-group">
-                                <label class="form-label">Nama Orang Tua (Ibu)</label>
-                                <input type="text" name="nama_ibu" class="form-control" autocomplete="off" autofocus>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">Pekerjaan Ibu</label>
-                                <select name="id_pekerjaan_ibu" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">Penghasilan Ibu</label>
-                                <select name="id_penghasilan_ibu" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="form-group">
-                                <label class="form-label">No Telepon</label>
-                                <input type="number" name="no_telp_ortu" class="form-control" autocomplete="off">
+                                <label class="form-label">Alamat</label>
+                                <textarea name="alamat" rows="10" class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
