@@ -55,7 +55,8 @@
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Nama</label>
-                                <input type="text" name="nama" class="form-control" autocomplete="off" autofocus required>
+                                <input type="text" name="nama" class="form-control" autocomplete="off" autofocus
+                                    required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
@@ -126,6 +127,35 @@
                                     <option value="">Laki-laki</option>
                                     <option value="">Perempuan</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="form-label">Nilai Ujian Nasional</label>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">Bahasa Indonesia</label>
+                                <input type="text" name="nilai_indo" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">Bahasa Inggris</label>
+                                <input type="text" name="nilai_ing" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">IPA</label>
+                                <input type="text" name="nilai_ipa" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="form-group">
+                                <label class="form-label">MTK</label>
+                                <input type="text" name="nilai_mtk" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-12 mb-3">
