@@ -56,21 +56,21 @@
 
     <!-- Nav Item - Decision -->
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/admin/penilaian">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Decision Matrix</span></a>
+            <span>Penilaian</span></a>
     </li>
 
     <!-- Nav Item - Normalization -->
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/admin/perhitungan">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Normalization</span></a>
+            <span>Perhitungan</span></a>
     </li>
 
     <!-- Nav Item - Rank -->
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/admin/rank">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Rank</span></a>
     </li>

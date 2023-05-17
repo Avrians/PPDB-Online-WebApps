@@ -45,6 +45,15 @@ Route::prefix('admin')->group(function () {
     Route::get('/tambahdata', function () {
         return view('admin.tambahdata');
     });
+    Route::get('/penilaian', function () {
+        return view('admin.penilaian');
+    });
+    Route::get('/perhitungan', function () {
+        return view('admin.perhitungan');
+    });
+    Route::get('/rank', function () {
+        return view('admin.rank');
+    });
 });
 
 Route::get('/login', function () {
