@@ -140,9 +140,12 @@
                                     <td>{{ $siswa->jarak }}</td>
                                     <td>Lulus</td>
                                     <td>
-                                        <a href="/admin/detail" class="btn btn-info mr-2">
-                                            Detail
-                                        </a>
+                                        <form action="/admin/detail/{{ $siswa->id }}">
+                                            @csrf
+                                            <button type="submit" class="btn btn-info mr-2">
+                                                Detail
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

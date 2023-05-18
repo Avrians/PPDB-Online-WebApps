@@ -14,7 +14,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">Form Data Calon Siswa</h6>
             </div>
             <div class="card-body">
-                <a href="#" class="btn btn-warning mb-2">Back</a>
+                <a href="/admin/mendaftar" class="btn btn-warning mb-2">Back</a>
                 <form action="#" method="POST">
                     @csrf
                     <div class="row">

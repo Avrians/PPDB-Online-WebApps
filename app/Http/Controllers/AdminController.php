@@ -19,6 +19,12 @@ class AdminController extends Controller
         ]);
     }
 
+    public function detail($id) {
+        $data = SiswaCalon::find($id);
+        return view('admin.detail', [
+            'detailsiswa' => $data
+        ]);
+    }
     /**
      * Show the form for creating a new resource.
      *

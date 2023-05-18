@@ -26,6 +26,7 @@ Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index']);
+    Route::get('/detail/{id}', [AdminController::class, 'detail']);
     Route::get('/mendaftar', function () {
         return view('admin.mendaftar');
     });
@@ -53,9 +54,6 @@ Route::prefix('admin')->group(function () {
     });
     Route::get('/rank', function () {
         return view('admin.rank');
-    });
-    Route::get('/detail', function () {
-        return view('admin.detail');
     });
 });
 

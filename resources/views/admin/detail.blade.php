@@ -16,81 +16,73 @@
                 <h6 class="m-0 font-weight-bold text-primary">Detail Lengkap Calon Siswa</h6>
             </div>
             <div class="card-body">
+                <a href="/admin/mendaftar" class="btn btn-warning mb-2">Back</a>
                 <div class="row">
                     <div class="col-6 mb-3">
                         <div class="form-group">
+                            <input type="hidden" name="id" id="id" class="form-control" required value="{{ $detailsiswa->id}}">
                             <label class="form-label">Nama</label>
-                            <input type="text" name="name" class="form-control" autocomplete="off" autofocus required>
+                            <input type="text" name="name" class="form-control" value="{{ $detailsiswa->name}}" required>
                         </div>
                     </div>
                     <div class="col-6 mb-3">
                         <div class="form-group">
                             <label class="form-label">NISN</label>
-                            <input type="number" name="nisn" class="form-control" autocomplete="off" required>
+                            <input type="number" name="nisn" class="form-control" value="{{ $detailsiswa->nisn}}" required>
                         </div>
                     </div>
                     <div class="col-6 mb-3">
                         <div class="form-group">
                             <label class="form-label">No Telepon</label>
-                            <input type="number" name="no_telp" class="form-control" autocomplete="off" required>
+                            <input type="number" name="no_telp" class="form-control" value="{{ $detailsiswa->no_telp}}"  required>
                         </div>
                     </div>
                     <div class="col-6 mb-3">
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" autocomplete="off" required>
+                            <input type="email" name="email" class="form-control" value="{{ $detailsiswa->email}}" required>
                         </div>
                     </div>
-                    <div class="col-md-1 mb-3">
+                    <div class="col-md-2 mb-3">
                         <div class="form-group">
                             <label class="form-label">Jenis Kelamin</label>
-                            <select name="id_jk" class="form-control">
-                                <option value="L">Laki-laki</option>
-                                <option value="P">Perempuan</option>
-                            </select>
+                            <input type="text" name="id_jk" class="form-control" value="{{ $detailsiswa->id_jk}}" required>
                         </div>
                     </div>
                     <div class="col-3 mb-3">
                         <div class="form-group">
                             <label class="form-label">Agama</label>
-                            <select name="id_agama" class="form-control">
-                                <option value="islam">Islam</option>
-                                <option value="kristen">Kristen</option>
-                            </select>
+                            <input type="text" name="id_agama" class="form-control" value="{{ $detailsiswa->id_agama}}" required>
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
                         <div class="form-group">
                             <label class="form-label">Tanggal Lahir</label>
-                            <input type="date" name="tanggal_lahir" class="form-control" autocomplete="off">
+                            <input type="text" name="tanggal_lahir" class="form-control" value="{{ $detailsiswa->tanggal_lahir}}"  required>
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
                         <div class="form-group">
                             <label class="form-label">Tempat Lahir</label>
-                            <input type="text" name="tempat_lahir" class="form-control" autocomplete="off">
+                            <input type="text" name="tempat_lahir" class="form-control" value="{{ $detailsiswa->tempat_lahir}}" required>
                         </div>
                     </div>
                     <div class="col-4 mb-3">
                         <div class="form-group">
                             <label class="form-label">Asal Sekolah</label>
-                            <input type="text" name="asal_sekolah" class="form-control" autocomplete="off">
+                            <input type="text" name="asal_sekolah" class="form-control" value="{{ $detailsiswa->asal_sekolah}}" required>
                         </div>
                     </div>
                     <div class="col-4 mb-3">
                         <div class="form-group">
                             <label class="form-label">Jarak ke Sekolah (Dalam Kilometer(Km))</label>
-                            <input type="number" name="jarak" class="form-control" autocomplete="off">
+                            <input type="number" name="jarak" class="form-control" value="{{ $detailsiswa->jarak}}" required>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="form-group">
                             <label class="form-label">Jurusan</label>
-                            <select name="id_jurusan" class="form-control">
-                                <option value="ipa">IPA</option>
-                                <option value="ips">IPS</option>
-                                <option value="bahasa">Bahasa</option>
-                            </select>
+                            <input type="text" name="id_jurusan" class="form-control" value="{{ $detailsiswa->id_jurusan}}" required>
                         </div>
                     </div>
 
@@ -101,32 +93,32 @@
                     </div>
                     <div class="col-2 mb-3">
                         <div class="form-group">
-                            <label class="form-label">Bahasa Indonesia</label>
-                            <input type="number" name="nilai_indo" class="form-control" autocomplete="off">
+                            <label class="form-label">B. Indonesia</label>
+                            <input type="number" name="nilai_indo" class="form-control" value="{{ $detailsiswa->nilai_indo}}" required>
                         </div>
                     </div>
                     <div class="col-2 mb-3">
                         <div class="form-group">
-                            <label class="form-label">Bahasa Inggris</label>
-                            <input type="number" name="nilai_ing" class="form-control" autocomplete="off">
+                            <label class="form-label">B. Inggris</label>
+                            <input type="number" name="nilai_ing" class="form-control" value="{{ $detailsiswa->nilai_ing}}" required>
                         </div>
                     </div>
                     <div class="col-2 mb-3">
                         <div class="form-group">
                             <label class="form-label">IPA</label>
-                            <input type="number" name="nilai_ipa" class="form-control" autocomplete="off">
+                            <input type="number" name="nilai_ipa" class="form-control" value="{{ $detailsiswa->nilai_ipa}}" required>
                         </div>
                     </div>
                     <div class="col-2 mb-3">
                         <div class="form-group">
                             <label class="form-label">MTK</label>
-                            <input type="number" name="nilai_mtk" class="form-control" autocomplete="off">
+                            <input type="number" name="nilai_mtk" class="form-control" value="{{ $detailsiswa->nilai_mtk}}" required>
                         </div>
                     </div>
                     <div class="col-12 mb-3">
                         <div class="form-group">
                             <label class="form-label">Alamat</label>
-                            <textarea name="alamat" rows="10" class="form-control"></textarea>
+                            <textarea name="alamat" rows="10" class="form-control">{{ $detailsiswa->alamat}}</textarea>
                         </div>
                     </div>
                     <div class="col-12 mb-3">
