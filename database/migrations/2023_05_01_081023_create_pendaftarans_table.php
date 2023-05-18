@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('id_siswacalon');
             $table->date('tanggal_pendaftaran');
+            $table->date('skor');
             $table->date('status');
             $table->timestamps();
         });

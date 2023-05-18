@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pendaftaran;
+use App\Models\SiswaCalon;
 use Illuminate\Http\Request;
 
 class PendaftaranController extends Controller
@@ -17,8 +18,11 @@ class PendaftaranController extends Controller
         return view('pendaftaran');
     }
 
-    public function hasil() {
-        return view('hasilpendaftaran');
+    public function hasil()
+    {
+        return view('hasilpendaftaran', [
+            'siswacalons' => SiswaCalon::all()
+        ]);
     }
 
     /**

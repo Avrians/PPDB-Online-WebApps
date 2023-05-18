@@ -25,7 +25,6 @@ Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index']);
-
     Route::get('/mendaftar', function () {
         return view('admin.mendaftar');
     });
