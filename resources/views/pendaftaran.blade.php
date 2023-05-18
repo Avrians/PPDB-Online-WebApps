@@ -62,7 +62,7 @@
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">NISN</label>
-                                <input type="text" name="nama" class="form-control" autocomplete="off" required>
+                                <input type="text" name="nisn" class="form-control" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
