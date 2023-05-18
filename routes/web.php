@@ -54,6 +54,9 @@ Route::prefix('admin')->group(function () {
     Route::get('/rank', function () {
         return view('admin.rank');
     });
+    Route::get('/detail', function () {
+        return view('admin.detail');
+    });
 });
 
 Route::get('/login', function () {

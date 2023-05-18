@@ -140,7 +140,7 @@
                                     <td>{{ $siswa->jarak }}</td>
                                     <td>Lulus</td>
                                     <td>
-                                        <a href="#" class="btn btn-info mr-2">
+                                        <a href="/admin/detail" class="btn btn-info mr-2">
                                             Detail
                                         </a>
                                     </td>
