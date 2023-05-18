@@ -26,10 +26,8 @@ Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index']);
-    Route::get('/detail/{id}', [AdminController::class, 'detail']);
-    Route::get('/mendaftar', function () {
-        return view('admin.mendaftar');
-    });
+    Route::get('/detail/{id}', [AdminController::class, 'detail'])->name('detail-siswa');
+    Route::get('/mendaftar', [AdminController::class, 'mendaftar']);
 
     Route::get('/gagal', function () {
         return view('admin.gagal');

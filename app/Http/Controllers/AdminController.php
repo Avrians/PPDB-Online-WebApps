@@ -25,6 +25,15 @@ class AdminController extends Controller
             'detailsiswa' => $data
         ]);
     }
+
+    public function mendaftar()
+    {
+        return view('admin.mendaftar', [
+            'siswacalons' => SiswaCalon::all()
+        ]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
