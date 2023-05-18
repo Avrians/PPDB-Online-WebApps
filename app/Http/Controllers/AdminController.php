@@ -82,6 +82,9 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = SiswaCalon::find($id);
+        $data->delete();
+
+        return redirect('/admin/mendaftar')->with('toast_success', 'Data berhasil dihapus');
     }
 }

@@ -49,20 +49,21 @@
             <div class="card-body">
                 <h1>Biodata Calon Siswa</h1>
                 <hr>
-                <form action="#" method="POST">
+                <form action="/daftar" method="POST">
+                    @method('post')
                     @csrf
                     <div class="row">
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Nama</label>
-                                <input type="text" name="nama" class="form-control" autocomplete="off" autofocus
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
                                     required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">NISN</label>
-                                <input type="text" name="nisn" class="form-control" autocomplete="off" required>
+                                <input type="number" name="nisn" class="form-control" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
@@ -81,8 +82,8 @@
                             <div class="form-group">
                                 <label class="form-label">Agama</label>
                                 <select name="id_agama" class="form-control">
-                                    <option value="">NO Data</option>
-                                    <option value="">NO Data</option>
+                                    <option value="islam">Islam</option>
+                                    <option value="kristen">Kristen</option>
                                 </select>
                             </div>
                         </div>
@@ -106,26 +107,26 @@
                         </div>
                         <div class="col-12 mb-3">
                             <div class="form-group">
-                                <label class="form-label">Jarak ke Sekolah</label>
-                                <input type="text" name="jarak_sekolah" class="form-control" autocomplete="off">
+                                <label class="form-label">Jarak ke Sekolah (Dalam Kilometer(Km))</label>
+                                <input type="number" name="jarak" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Jurusan</label>
                                 <select name="id_jurusan" class="form-control">
-                                    <option value="">IPA</option>
-                                    <option value="">IPS</option>
-                                    <option value="">Bahasa</option>
+                                    <option value="ipa">IPA</option>
+                                    <option value="ips">IPS</option>
+                                    <option value="bahasa">Bahasa</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Jenis Kelamin</label>
-                                <select name="id_jenis_kelamin" class="form-control">
-                                    <option value="">Laki-laki</option>
-                                    <option value="">Perempuan</option>
+                                <select name="id_jk" class="form-control">
+                                    <option value="L">Laki-laki</option>
+                                    <option value="P">Perempuan</option>
                                 </select>
                             </div>
                         </div>
@@ -137,25 +138,25 @@
                         <div class="col-3 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Bahasa Indonesia</label>
-                                <input type="text" name="nilai_indo" class="form-control" autocomplete="off">
+                                <input type="number" name="nilai_indo" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-3 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Bahasa Inggris</label>
-                                <input type="text" name="nilai_ing" class="form-control" autocomplete="off">
+                                <input type="number" name="nilai_ing" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-3 mb-3">
                             <div class="form-group">
                                 <label class="form-label">IPA</label>
-                                <input type="text" name="nilai_ipa" class="form-control" autocomplete="off">
+                                <input type="number" name="nilai_ipa" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-3 mb-3">
                             <div class="form-group">
                                 <label class="form-label">MTK</label>
-                                <input type="text" name="nilai_mtk" class="form-control" autocomplete="off">
+                                <input type="number" name="nilai_mtk" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-12 mb-3">

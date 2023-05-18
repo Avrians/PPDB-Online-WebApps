@@ -30,7 +30,7 @@
                                     <td>{{ $siswa->name }}</td>
                                     <td>{{ $siswa->nisn }}</td>
                                     <td>{{ $siswa->asal_sekolah }}</td>
-                                    <td>{{ $siswa->jurusan }}</td>
+                                    <td>{{ $siswa->id_jurusan }}</td>
                                     <td>987</td>
                                     <td>
                                         <a href="#" class="btn btn-info mr-2">

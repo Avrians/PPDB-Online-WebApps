@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/daftar', [PendaftaranController::class, 'index']);
+Route::post('/daftar', [PendaftaranController::class, 'store']);
 Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
 Route::prefix('admin')->group(function () {

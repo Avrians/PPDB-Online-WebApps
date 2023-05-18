@@ -131,7 +131,7 @@
                                     <td>{{ $siswa->nisn }}</td>
                                     <td>{{ $siswa->no_telp }}</td>
                                     <td>{{ $siswa->email }}</td>
-                                    <td>{{ $siswa->jurusan }}</td>
+                                    <td>{{ $siswa->id_jurusan }}</td>
                                     <td>{{ $siswa->asal_sekolah }}</td>
                                     <td>{{ $siswa->nilai_ipa }}</td>
                                     <td>{{ $siswa->nilai_mtk }}</td>
