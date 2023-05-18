@@ -164,6 +164,29 @@
                                 <textarea name="alamat" rows="10" class="form-control"></textarea>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="form-label">Upload Berkas</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-group">
+                                <label for="formFile" class="form-label">Ijazah</label>
+                                <input class="form-control" type="file" id="ijazah" name="ijazah">
+                              </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-group">
+                                <label for="formFile" class="form-label">SKHUN</label>
+                                <input class="form-control" type="file" id="skhun" name="ijazah">
+                              </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-group">
+                                <label for="formFile" class="form-label">Sertifikat (Jika ada)</label>
+                                <input class="form-control" type="file" id="sertifikat" name="ijazah">
+                              </div>
+                        </div>
                         <div class="col-12 mb-3">
                             <button class="btn btn-primary w-100" type="submit">Kirim</button>
                         </div>
