@@ -34,46 +34,30 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <td>1</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>$109,850</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>
-                                <a href="#" class="btn btn-warning mr-2">
-                                    Edit
-                                </a>
-                                <a href="#" class="btn btn-danger mr-2">
-                                    Hapus
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Support Engineer</td>
-                            <td>San Francisco</td>
-                            <td>47</td>
-                            <td>2009/07/07</td>
-                            <td>$87,500</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>
-                                <a href="#" class="btn btn-warning mr-2">
-                                    Edit
-                                </a>
-                                <a href="#" class="btn btn-danger mr-2">
-                                    Hapus
-                                </a>
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Secretary</td>
+                                <td>San Francisco</td>
+                                <td>41</td>
+                                <td>2010/02/12</td>
+                                <td>$109,850</td>
+                                <td>Secretary</td>
+                                <td>San Francisco</td>
+                                <td>41</td>
+                                <td>2010/02/12</td>
+                                <td>
+                                    <a href="#" class="btn btn-info mr-2">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="btn btn-warning mr-2">
+                                        Edit
+                                    </a>
+                                    <a href="#" class="btn btn-danger mr-2">
+                                        Hapus
+                                    </a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

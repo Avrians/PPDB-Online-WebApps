@@ -109,10 +109,12 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
-                                <th>Asal Sekolah</th>
-                                <th>Jurusan</th>
+                                <th>NISN</th>
                                 <th>No HP</th>
                                 <th>Email</th>
+                                <th>Jurusan</th>
+                                <th>Asal Sekolah</th>
+                                <th>Nilai IPA</th>
                                 <th>Nilai MTK</th>
                                 <th>Nilai B.Ind</th>
                                 <th>Nilai B.Ing</th>
@@ -121,34 +123,29 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <td>1</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>$109,850</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>$109,850</td>
-                            <td>$109,850</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Support Engineer</td>
-                            <td>San Francisco</td>
-                            <td>47</td>
-                            <td>2009/07/07</td>
-                            <td>$87,500</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                            <td>$109,850</td>
-                            <td>$109,850</td>
-                        </tr>
+                        <tbody>
+                            @foreach ($siswacalons as $siswa)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $siswa->name }}</td>
+                                    <td>{{ $siswa->nisn }}</td>
+                                    <td>{{ $siswa->no_telp }}</td>
+                                    <td>{{ $siswa->email }}</td>
+                                    <td>{{ $siswa->jurusan }}</td>
+                                    <td>{{ $siswa->asal_sekolah }}</td>
+                                    <td>{{ $siswa->nilai_ipa }}</td>
+                                    <td>{{ $siswa->nilai_mtk }}</td>
+                                    <td>{{ $siswa->nilai_indo }}</td>
+                                    <td>{{ $siswa->nilai_ing }}</td>
+                                    <td>{{ $siswa->jarak }}</td>
+                                    <td>Lulus</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info mr-2">
+                                            Detail
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

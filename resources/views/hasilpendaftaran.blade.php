@@ -16,9 +16,10 @@
                       <tr>
                           <th>No</th>
                           <th>Nama</th>
+                          <th>NISN</th>
                           <th>Asal Sekolah</th>
                           <th>Jurusan</th>
-                          <th>Orang Tua</th>
+                          <th>Skor Seleksi</th>
                           <th>Status</th>
                       </tr>
                   </thead>

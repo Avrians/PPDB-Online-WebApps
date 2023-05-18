@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\RegisterController;
@@ -23,9 +24,8 @@ Route::get('/daftar', [PendaftaranController::class, 'index']);
 Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 
 Route::prefix('admin')->group(function () {
-    Route::get('/', function () {
-        return view('admin.index');
-    });
+    Route::get('/', [AdminController::class, 'index']);
+
     Route::get('/mendaftar', function () {
         return view('admin.mendaftar');
     });
