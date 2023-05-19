@@ -8,10 +8,11 @@
 
 @section('content')
     <div class="container my-5">
+        <h3 class="text-center mb-3">Hasil Seleksi Pendaftaran PPDB SMA Nusa Bangsa</h3>
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <table class="table table-sm table-striped" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>No</th>
@@ -47,6 +48,9 @@
     </div>
 @endsection
 @push('add-scripts')
+  <!-- Bootstrap core JavaScript-->
+  <script src="{{ url('sbadmin/vendor/jquery/jquery.min.js') }}"></script>
+
     <!-- Page level plugins -->
     <script src="{{ asset('sbadmin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('sbadmin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
