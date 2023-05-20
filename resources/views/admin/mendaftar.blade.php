@@ -52,7 +52,7 @@
                                 <td>{{ $siswa->nilai_indo }}</td>
                                 <td>{{ $siswa->nilai_ing }}</td>
                                 <td>{{ $siswa->jarak }}</td>
-                                <td>Lulus</td>
+                                <td>{{ $siswa->status }}</td>
                                 <td>
                                     <a href="#" class="btn btn-info">
                                         Detail

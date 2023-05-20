@@ -34,6 +34,7 @@ return new class extends Migration
             $table->string('ijazah');
             $table->string('skhun');
             $table->string('sertifikat')->nullable();
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -19,7 +19,8 @@ class AdminController extends Controller
         ]);
     }
 
-    public function detail($id) {
+    public function detail($id)
+    {
         $data = SiswaCalon::find($id);
         return view('admin.detail', [
             'detailsiswa' => $data
@@ -30,6 +31,22 @@ class AdminController extends Controller
     {
         return view('admin.mendaftar', [
             'siswacalons' => SiswaCalon::all()
+        ]);
+    }
+
+    public function diterima()
+    {
+        $diterima = SiswaCalon::where('status', 'Diterima')->get();
+        return view('admin.diterima', [
+            'siswacalons' => $diterima
+        ]);
+    }
+
+    public function gagal()
+    {
+        $gagal = SiswaCalon::where('status', 'Gagal')->get();
+        return view('admin.gagal', [
+            'siswacalons' => $gagal
         ]);
     }
 

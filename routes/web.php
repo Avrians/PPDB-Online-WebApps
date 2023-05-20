@@ -28,14 +28,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index']);
     Route::get('/detail/{id}', [AdminController::class, 'detail'])->name('detail-siswa');
     Route::get('/mendaftar', [AdminController::class, 'mendaftar']);
-
-    Route::get('/gagal', function () {
-        return view('admin.gagal');
-    });
-
-    Route::get('/diterima', function () {
-        return view('admin.diterima');
-    });
+    Route::get('/diterima', [AdminController::class, 'diterima']);
+    Route::get('/gagal', [AdminController::class, 'gagal']);
 
     Route::get('/kategori', function () {
         return view('admin.kategori');
