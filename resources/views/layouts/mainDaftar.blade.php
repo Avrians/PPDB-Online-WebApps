@@ -11,11 +11,12 @@
 
     @include('layouts.style')
     @stack('add-styles')
-
-
+    
+    
 </head>
 
 <body>
+    @include('sweetalert::alert')
 
     <!-- ======= Header - Navbar ======= -->
     @include('layouts.navbarDaftar')

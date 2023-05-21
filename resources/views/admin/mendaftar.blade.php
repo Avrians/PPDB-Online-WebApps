@@ -70,10 +70,11 @@
                                         <form action="/admin/hapusdata/{{ $siswa->id }}" method="get">
                                             @method('delete')
                                             @csrf
-                                            <button type="submit" class="btn btn-danger mr-2">
+                                            <button type="submit" class="btn btn-danger mr-2" data-confirm-delete="true">
                                                 Hapus
                                             </button>
                                         </form>
+                                        
                                     </td>
                                 </tr>
                             @endforeach

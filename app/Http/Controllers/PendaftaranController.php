@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pendaftaran;
 use App\Models\SiswaCalon;
+use App\Models\Pendaftaran;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PendaftaranController extends Controller
 {
@@ -23,6 +24,14 @@ class PendaftaranController extends Controller
         return view('hasilpendaftaran', [
             'siswacalons' => SiswaCalon::all()
         ]);
+    }
+
+    public function hapusData($id)
+    {
+        $data = SiswaCalon::find($id);
+        
+        $data->delete();
+        return redirect('/admin/mendaftar')->with('toast_success', 'Data berhasil dihapus');
     }
 
     /**
@@ -66,7 +75,8 @@ class PendaftaranController extends Controller
         }
         SiswaCalon::create($validatedData);
 
-        return redirect('/hasil')->with('success', 'Pendaftaran Berhasil!');
+        Alert::success('Berhasil', 'Data anda sudah terekap, Silahkan tunggu info pengumuman!');
+        return redirect('/hasil');
     }
 
     /**
