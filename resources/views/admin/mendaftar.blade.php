@@ -39,32 +39,43 @@
                         </thead>
                         <tbody>
                             @foreach ($siswacalons as $siswa)
-                            <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $siswa->name }}</td>
-                                <td>{{ $siswa->nisn }}</td>
-                                <td>{{ $siswa->no_telp }}</td>
-                                <td>{{ $siswa->email }}</td>
-                                <td>{{ $siswa->id_jurusan }}</td>
-                                <td>{{ $siswa->asal_sekolah }}</td>
-                                <td>{{ $siswa->nilai_ipa }}</td>
-                                <td>{{ $siswa->nilai_mtk }}</td>
-                                <td>{{ $siswa->nilai_indo }}</td>
-                                <td>{{ $siswa->nilai_ing }}</td>
-                                <td>{{ $siswa->jarak }}</td>
-                                <td>{{ $siswa->status }}</td>
-                                <td>
-                                    <a href="#" class="btn btn-info">
-                                        Detail
-                                    </a>
-                                    <a href="#" class="btn btn-warning">
-                                        Edit
-                                    </a>
-                                    <a href="#" class="btn btn-danger">
-                                        Hapus
-                                    </a>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $siswa->name }}</td>
+                                    <td>{{ $siswa->nisn }}</td>
+                                    <td>{{ $siswa->no_telp }}</td>
+                                    <td>{{ $siswa->email }}</td>
+                                    <td>{{ $siswa->id_jurusan }}</td>
+                                    <td>{{ $siswa->asal_sekolah }}</td>
+                                    <td>{{ $siswa->nilai_ipa }}</td>
+                                    <td>{{ $siswa->nilai_mtk }}</td>
+                                    <td>{{ $siswa->nilai_indo }}</td>
+                                    <td>{{ $siswa->nilai_ing }}</td>
+                                    <td>{{ $siswa->jarak }}</td>
+                                    <td>{{ $siswa->status }}</td>
+                                    <td>
+                                        <form action="/admin/detail/{{ $siswa->id }}">
+                                            @csrf
+                                            <button type="submit" class="btn btn-info mr-2">
+                                                Detail
+                                            </button>
+                                        </form>
+                                        <form action="/admin/editdata/{{ $siswa->id }}" method="POST">
+                                            @method('put')
+                                            @csrf
+                                            <button type="submit" class="btn btn-warning mr-2">
+                                                Edit
+                                            </button>
+                                        </form>
+                                        <form action="/admin/hapusdata/{{ $siswa->id }}" method="get">
+                                            @method('delete')
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger mr-2">
+                                                Hapus
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
                             @endforeach
                         </tbody>
                     </table>

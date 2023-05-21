@@ -27,6 +27,14 @@ class AdminController extends Controller
         ]);
     }
 
+    public function editData($id, Request $request)
+    {
+        $data = SiswaCalon::find($id);
+        return view('admin.editdata', [
+            'detailsiswa' => $data
+        ]);
+    }
+
     public function mendaftar()
     {
         return view('admin.mendaftar', [
@@ -113,6 +121,14 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
+    {
+        $data = SiswaCalon::find($id);
+        $data->delete();
+
+        return redirect('/admin/mendaftar')->with('toast_success', 'Data berhasil dihapus');
+    }
+
+    public function hapusData($id)
     {
         $data = SiswaCalon::find($id);
         $data->delete();

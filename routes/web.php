@@ -27,6 +27,8 @@ Route::get('/hasil', [PendaftaranController::class, 'hasil']);
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index']);
     Route::get('/detail/{id}', [AdminController::class, 'detail'])->name('detail-siswa');
+    Route::put('/editdata/{id}', [AdminController::class, 'editData']);
+    Route::get('/hapusdata/{id}', [AdminController::class, 'hapusData']);
     Route::get('/mendaftar', [AdminController::class, 'mendaftar']);
     Route::get('/diterima', [AdminController::class, 'diterima']);
     Route::get('/gagal', [AdminController::class, 'gagal']);

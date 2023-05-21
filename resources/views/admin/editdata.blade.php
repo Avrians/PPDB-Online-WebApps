@@ -121,6 +121,9 @@
                             <textarea name="alamat" rows="10" class="form-control">{{ $detailsiswa->alamat}}</textarea>
                         </div>
                     </div>
+                    <div class="col-12 mb-3">
+                        <button class="btn btn-primary w-100" type="submit">Update</button>
+                    </div>
                 </div>
             </div>
         </div>
