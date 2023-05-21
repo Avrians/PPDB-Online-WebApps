@@ -37,8 +37,9 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Total Mendaftar</div>
+                                <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                    <a href="/admin/mendaftar" style="text-decoration:none" class="text-warning">Total Mendaftar</a>
+                                </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">1215</div>
                             </div>
                             <div class="col-auto">
@@ -54,9 +55,9 @@
                 <div class="card border-left-info shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total
-                                    Diterima
+                            <div class="col mr-2"> 
+                                <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                    <a href="/admin/diterima" style="text-decoration:none" class="text-info">Total Diterima</a>
                                 </div>
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -84,8 +85,9 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                    Total Gagal</div>
+                                <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                    <a href="/admin/gagal" style="text-decoration:none" class="text-danger">Total Gagal</a>
+                                </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">715</div>
                             </div>
                             <div class="col-auto">
