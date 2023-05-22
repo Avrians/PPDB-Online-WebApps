@@ -14,7 +14,13 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $diterima = SiswaCalon::where('status', 'Diterima')->count();
+        $gagal = SiswaCalon::where('status', 'Gagal')->count();
+        $semua = SiswaCalon::count();
         return view('admin.index', [
+            'gagal' => $gagal,
+            'diterima' => $diterima,
+            'semua' => $semua,
             'siswacalons' => SiswaCalon::all()
         ]);
     }

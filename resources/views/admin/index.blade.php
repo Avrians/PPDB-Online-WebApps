@@ -38,9 +38,10 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-uppercase mb-1">
-                                    <a href="/admin/mendaftar" style="text-decoration:none" class="text-warning">Total Mendaftar</a>
+                                    <a href="/admin/mendaftar" style="text-decoration:none" class="text-warning">Total
+                                        Mendaftar</a>
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">1215</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $semua }}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-users fa-2x text-warning"></i>
@@ -55,13 +56,14 @@
                 <div class="card border-left-info shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
-                            <div class="col mr-2"> 
+                            <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-uppercase mb-1">
-                                    <a href="/admin/diterima" style="text-decoration:none" class="text-info">Total Diterima</a>
+                                    <a href="/admin/diterima" style="text-decoration:none" class="text-info">Total
+                                        Diterima</a>
                                 </div>
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
-                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">500</div>
+                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $diterima }}</div>
                                     </div>
                                     <div class="col">
                                         <div class="progress progress-sm mr-2">
@@ -88,7 +90,7 @@
                                 <div class="text-xs font-weight-bold text-uppercase mb-1">
                                     <a href="/admin/gagal" style="text-decoration:none" class="text-danger">Total Gagal</a>
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">715</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $gagal }}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-minus-circle fa-2x text-danger"></i>
