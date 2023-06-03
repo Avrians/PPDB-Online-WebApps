@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -51,9 +52,8 @@ Route::prefix('admin')->group(function () {
     });
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::post('/login', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'authenticate']);
 
 
 // Route Halaman admin
