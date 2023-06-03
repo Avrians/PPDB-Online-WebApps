@@ -52,8 +52,8 @@ Route::prefix('admin')->group(function () {
     });
 });
 
-Route::post('/login', [LoginController::class, 'index']);
-Route::get('/login', [LoginController::class, 'authenticate']);
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 
 // Route Halaman admin
