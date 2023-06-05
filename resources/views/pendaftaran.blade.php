@@ -165,27 +165,11 @@
                                 <textarea name="alamat" rows="10" class="form-control"></textarea>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-9 mb-3">
                             <div class="form-group">
-                                <label class="form-label">Upload Berkas</label>
-                            </div>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <div class="form-group">
-                                <label for="formFile" class="form-label">Ijazah</label>
-                                <input class="form-control" type="file" id="ijazah" name="ijazah">
-                              </div>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <div class="form-group">
-                                <label for="formFile" class="form-label">SKHUN</label>
-                                <input class="form-control" type="file" id="skhun" name="ijazah">
-                              </div>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <div class="form-group">
-                                <label for="formFile" class="form-label">Sertifikat (Jika ada)</label>
-                                <input class="form-control" type="file" id="sertifikat" name="ijazah">
+                                <label for="formFile" class="form-label">Upload Berkas</label>
+                                <p>Mohon untuk mengupload berkas-berkas seperti Ijazah, SKHUN, NISN, Sertifikat Pendukung (Jika ada)</p>
+                                <input class="form-control" type="file" id="berkas" name="berkas">
                               </div>
                         </div>
                         <div class="col-12 mb-3">
