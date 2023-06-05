@@ -31,10 +31,8 @@ return new class extends Migration
             $table->string('jarak');
             $table->text('alamat');
             $table->string('jurusan');
-            $table->string('ijazah');
-            $table->string('skhun');
-            $table->string('sertifikat')->nullable();
-            $table->string('status');
+            $table->string('berkas')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

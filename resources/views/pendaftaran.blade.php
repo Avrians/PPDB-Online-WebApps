@@ -81,7 +81,7 @@
                         <div class="col-12 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Agama</label>
-                                <select name="id_agama" class="form-control">
+                                <select name="agama" class="form-control">
                                     <option value="islam">Islam</option>
                                     <option value="kristen">Kristen</option>
                                 </select>
@@ -114,7 +114,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Jurusan</label>
-                                <select name="id_jurusan" class="form-control">
+                                <select name="jurusan" class="form-control">
                                     <option value="ipa">IPA</option>
                                     <option value="ips">IPS</option>
                                     <option value="bahasa">Bahasa</option>
@@ -124,7 +124,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
                                 <label class="form-label">Jenis Kelamin</label>
-                                <select name="id_jk" class="form-control">
+                                <select name="jk" class="form-control">
                                     <option value="L">Laki-laki</option>
                                     <option value="P">Perempuan</option>
                                 </select>
