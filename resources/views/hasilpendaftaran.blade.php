@@ -19,8 +19,7 @@
                                 <th>Nama</th>
                                 <th>NISN</th>
                                 <th>Asal Sekolah</th>
-                                <th>Jurusan</th>
-                                <th>Skor Seleksi</th>
+                                <th>Skor</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -31,7 +30,6 @@
                                     <td>{{ $siswa->name }}</td>
                                     <td>{{ $siswa->nisn }}</td>
                                     <td>{{ $siswa->asal_sekolah }}</td>
-                                    <td>{{ $siswa->id_jurusan }}</td>
                                     <td>987</td>
                                     <td>
                                         <a href="#" class="btn btn-info mr-2">

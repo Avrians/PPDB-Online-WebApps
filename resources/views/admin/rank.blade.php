@@ -34,7 +34,13 @@
                                 <td>{{ $h->name }}</td>
                                 <td>{{ $h->nisn }}</td>
                                 <td>{{ $h->hasil }}</td>
-                                <td>Lolos</td>
+                                <td>
+                                    @if ($h->status == 'Diterima')
+                                    <span class="btn btn-info btn-sm">{{ $h->status }}</span>
+                                    @else
+                                    <span class="btn btn-danger btn-sm">{{ $h->status }}</span>
+                                    @endif
+                                    </td>
                             </tr>
                         @endforeach
                         </tbody>
