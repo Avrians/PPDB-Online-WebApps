@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HasilSAWController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PendaftaranController;
@@ -47,9 +48,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/perhitungan', function () {
         return view('admin.perhitungan');
     });
-    Route::get('/rank', function () {
-        return view('admin.rank');
-    });
+    Route::get('/rank', [HasilSAWController::class, 'index']);
 });
 
 Route::get('/login', [LoginController::class, 'index']);

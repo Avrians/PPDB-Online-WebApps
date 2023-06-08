@@ -23,25 +23,20 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
-                                <th>Bobot</th>
-                                <th>Atribut Kategori</th>
-                                <th>Aksi</th>
+                                <th>Nim</th>
+                                <th>Nilai</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <td>1</td>
-                            <td>Secretary</td>
-                            <td>San Francisco</td>
-                            <td>41</td>
-                            <td>2010/02/12</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Support Engineer</td>
-                            <td>San Francisco</td>
-                            <td>47</td>
-                            <td>2009/07/07</td>
-                        </tr>
+                        @foreach ($hasil as $h)
+                            <tr>
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $h->name }}</td>
+                                <td>{{ $h->nisn }}</td>
+                                <td>{{ $h->hasil }}</td>
+                                <td>Lolos</td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
