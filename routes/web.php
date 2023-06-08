@@ -35,16 +35,13 @@ Route::prefix('admin')->group(function () {
     Route::get('/diterima', [AdminController::class, 'diterima']);
     Route::get('/gagal', [AdminController::class, 'gagal']);
 
-    Route::get('/kategori', function () {
-        return view('admin.kategori');
-    });
-
     Route::get('/tambahdata', function () {
         return view('admin.tambahdata');
     });
     Route::get('/penilaian', function () {
         return view('admin.penilaian');
     });
+    Route::get('/kategori', [HasilSAWController::class, 'kategori']);
     Route::get('/perhitungan', [HasilSAWController::class, 'normalisasi']);
     Route::get('/rank', [HasilSAWController::class, 'index']);
 });

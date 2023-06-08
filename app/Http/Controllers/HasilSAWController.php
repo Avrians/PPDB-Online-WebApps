@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Hasilspk;
+use App\Models\Kriteria;
 use App\Models\Normalisasi;
 use Illuminate\Http\Request;
 
@@ -18,6 +19,11 @@ class HasilSAWController extends Controller
     {
         return view('admin.perhitungan', [
             'normalisasi' => Normalisasi::get()
+        ]);
+    }
+    public function kategori(){
+        return view('admin.kategori', [
+            'kriteria' => Kriteria::get()
         ]);
     }
 }
