@@ -38,9 +38,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/tambahdata', function () {
         return view('admin.tambahdata');
     });
-    Route::get('/penilaian', function () {
-        return view('admin.penilaian');
-    });
+
+    Route::get('/penilaian', [AdminController::class, 'penilaian']);
     Route::get('/kategori', [HasilSAWController::class, 'kategori']);
     Route::get('/perhitungan', [HasilSAWController::class, 'normalisasi']);
     Route::get('/rank', [HasilSAWController::class, 'index']);
