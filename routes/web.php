@@ -45,9 +45,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/penilaian', function () {
         return view('admin.penilaian');
     });
-    Route::get('/perhitungan', function () {
-        return view('admin.perhitungan');
-    });
+    Route::get('/perhitungan', [HasilSAWController::class, 'normalisasi']);
     Route::get('/rank', [HasilSAWController::class, 'index']);
 });
 
