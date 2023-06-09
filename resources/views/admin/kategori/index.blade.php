@@ -27,14 +27,16 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        @foreach ($kriteria as $k)                            
-                        <tr>
-                            <td>{{ $k->name }}</td>
-                            <td>{{ $k->atribut }}</td>
-                            <td>{{ $k->bobot }}</td>
-                            <td>{{ $k->persentase }}</td>
-                            <td>Edit</td>
-                        </tr>
+                        @foreach ($kriteria as $k)
+                            <tr>
+                                <td>{{ $k->name }}</td>
+                                <td>{{ $k->atribut }}</td>
+                                <td>{{ $k->bobot }}</td>
+                                <td>{{ $k->persentase }}</td>
+                                <td>
+                                    <a href="/admin/kategori/edit">Edit</a>
+                                </td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>
