@@ -24,7 +24,7 @@
                         <div class="col-2 my-3">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required>
+                                    required value="{{ $kriteria->name }}">
                             </div>
                         </div>
                         <div class="col-1 my-3">

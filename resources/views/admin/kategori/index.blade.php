@@ -34,7 +34,12 @@
                                 <td>{{ $k->bobot }}</td>
                                 <td>{{ $k->persentase }}</td>
                                 <td>
-                                    <a href="/admin/kategori/edit">Edit</a>
+                                    <form action="/admin/kategori/edit/{{ $k->id }}" method="GET">
+                                        @csrf
+                                        <button type="submit" class="btn btn-info mr-2">
+                                            Edit
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

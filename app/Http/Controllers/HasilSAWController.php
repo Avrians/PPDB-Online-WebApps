@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Hasilspk;
 use App\Models\Kriteria;
 use App\Models\Normalisasi;
@@ -21,12 +22,17 @@ class HasilSAWController extends Controller
             'normalisasi' => Normalisasi::get()
         ]);
     }
-    public function kategori(){
+    public function kategori()
+    {
         return view('admin.kategori.index', [
             'kriteria' => Kriteria::get()
         ]);
     }
-    public function kategoriEdit(){
-        return view('admin.kategori.edit');
+    public function kategoriEdit($id)
+    {
+        $data = Category::find($id);
+        return view('admin.kategori.edit', [
+            'kriteria' => $data
+        ]);
     }
 }
