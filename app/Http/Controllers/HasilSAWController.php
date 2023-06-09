@@ -26,4 +26,7 @@ class HasilSAWController extends Controller
             'kriteria' => Kriteria::get()
         ]);
     }
+    public function kategoriEdit(){
+        return view('admin.kategori.edit');
+    }
 }

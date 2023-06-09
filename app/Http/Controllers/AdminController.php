@@ -66,6 +66,9 @@ class AdminController extends Controller
 
         return redirect('/admin/mendaftar')->with('toast_success', 'Data berhasil dihapus');
     }
+    public function tambahData(){
+        return view('admin.tambahdata');
+    }
 
     public function penilaian()
     {

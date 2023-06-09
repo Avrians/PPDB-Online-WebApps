@@ -19,55 +19,42 @@
                     @csrf
                     <div class="row">
                         <div class="col-1 my-3">
-                            <label class="form-label">Jarak</label>
+                            <label class="form-label">Nama</label>
                         </div>
-                        <div class="col-1 my-3">
+                        <div class="col-2 my-3">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" autocomplete="off" autofocus
                                     required>
                             </div>
                         </div>
                         <div class="col-1 my-3">
-                            <label class="form-label">Nilai B.Indonesia</label>
+                            <label class="form-label">Atribut</label>
                         </div>
-                        <div class="col-1 my-3">
+                        <div class="col-2 my-3">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required>
+                                <select name="id_jurusan" class="form-control">
+                                    <option value="cost">Cost</option>
+                                    <option value="benefit">Benefit</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-1 my-3">
-                            <label class="form-label">Nilai Matematika</label>
+                            <label class="form-label">Bobot</label>
                         </div>
-                        <div class="col-1 my-3">
+                        <div class="col-2 my-3">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required>
+                                <select name="id_jurusan" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                             </div>
                         </div>
-
-                        <div class="col-1 my-3">
-                            <label class="form-label">Nilai B.Inggris</label>
+                        <div class="col-2 my-3">
+                            <button class="btn btn-primary w-100" type="submit">Kirim</button>
                         </div>
-                        <div class="col-1 my-3">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="col-1 my-3">
-                            <label class="form-label">Nilai IPA</label>
-                        </div>
-                        <div class="col-1 my-3">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 mb-3">
-                        <button class="btn btn-primary w-100" type="submit">Kirim</button>
                     </div>
                 </form>
             </div>

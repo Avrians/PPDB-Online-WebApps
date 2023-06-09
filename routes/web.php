@@ -34,14 +34,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/mendaftar', [AdminController::class, 'mendaftar']);
     Route::get('/diterima', [AdminController::class, 'diterima']);
     Route::get('/gagal', [AdminController::class, 'gagal']);
-
-    Route::get('/tambahdata', function () {
-        return view('admin.tambahdata');
-    });
-    Route::get('/kategori/edit', function () {
-        return view('admin.kategori.edit');
-    });
-
+    Route::get('/tambahdata', [AdminController::class, 'tambahData']);
+    Route::get('/kategori/edit', [HasilSAWController::class, 'kategoriEdit']);
     Route::get('/penilaian', [AdminController::class, 'penilaian']);
     Route::get('/kategori', [HasilSAWController::class, 'kategori']);
     Route::get('/perhitungan', [HasilSAWController::class, 'normalisasi']);
