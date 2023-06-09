@@ -18,40 +18,56 @@
                 <form action="#" method="POST">
                     @csrf
                     <div class="row">
-                        <div class="col-6 mb-3">
+                        <div class="col-1 my-3">
+                            <label class="form-label">Jarak</label>
+                        </div>
+                        <div class="col-1 my-3">
                             <div class="form-group">
-                                <label class="form-label">Nama</label>
                                 <input type="text" name="name" class="form-control" autocomplete="off" autofocus
                                     required>
                             </div>
                         </div>
-                        <div class="col-6 mb-3">
+                        <div class="col-1 my-3">
+                            <label class="form-label">Nilai B.Indonesia</label>
+                        </div>
+                        <div class="col-1 my-3">
                             <div class="form-group">
-                                <label class="form-label">NISN</label>
-                                <input type="number" name="nisn" class="form-control" autocomplete="off" required>
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
+                                    required>
                             </div>
                         </div>
-                        <div class="col-6 mb-3">
+                        <div class="col-1 my-3">
+                            <label class="form-label">Nilai Matematika</label>
+                        </div>
+                        <div class="col-1 my-3">
                             <div class="form-group">
-                                <label class="form-label">No Telepon</label>
-                                <input type="number" name="no_telp" class="form-control" autocomplete="off" required>
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
+                                    required>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-3">
+
+                        <div class="col-1 my-3">
+                            <label class="form-label">Nilai B.Inggris</label>
+                        </div>
+                        <div class="col-1 my-3">
                             <div class="form-group">
-                                <label class="form-label">Tempat Lahir</label>
-                                <input type="text" name="tempat_lahir" class="form-control" autocomplete="off">
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
+                                    required>
                             </div>
                         </div>
-                        <div class="col-4 mb-3">
+
+                        <div class="col-1 my-3">
+                            <label class="form-label">Nilai IPA</label>
+                        </div>
+                        <div class="col-1 my-3">
                             <div class="form-group">
-                                <label class="form-label">Asal Sekolah</label>
-                                <input type="text" name="asal_sekolah" class="form-control" autocomplete="off">
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
+                                    required>
                             </div>
                         </div>
-                        <div class="col-12 mb-3">
-                            <button class="btn btn-primary w-100" type="submit">Kirim</button>
-                        </div>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <button class="btn btn-primary w-100" type="submit">Kirim</button>
                     </div>
                 </form>
             </div>
