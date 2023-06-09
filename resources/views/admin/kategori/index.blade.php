@@ -23,7 +23,7 @@
                                 <th>Nama</th>
                                 <th>Atribut</th>
                                 <th>Bobot</th>
-                                <th>Persentasi</th>
+                                <th>Persentase</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>

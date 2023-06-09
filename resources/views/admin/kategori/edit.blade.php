@@ -32,9 +32,9 @@
                         </div>
                         <div class="col-2 my-3">
                             <div class="form-group">
-                                <select name="id_jurusan" class="form-control">
-                                    <option value="cost">Cost</option>
-                                    <option value="benefit">Benefit</option>
+                                <select name="atribut" class="form-control">
+                                    <option value="Cost" {{ $kriteria->atribut == 'Cost' ? 'selected' : ''}}>Cost</option>
+                                    <option value="Benefit" {{ $kriteria->atribut == 'Benefit' ? 'selected' : ''}}>Benefit</option>
                                 </select>
                             </div>
                         </div>
@@ -43,12 +43,12 @@
                         </div>
                         <div class="col-2 my-3">
                             <div class="form-group">
-                                <select name="id_jurusan" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                <select name="bobot" class="form-control">
+                                    <option value="1" {{ $kriteria->bobot == '1' ? 'selected' : ''}}>1</option>
+                                    <option value="2" {{ $kriteria->bobot == '2' ? 'selected' : ''}}>2</option>
+                                    <option value="3" {{ $kriteria->bobot == '3' ? 'selected' : ''}}>3</option>
+                                    <option value="4" {{ $kriteria->bobot == '4' ? 'selected' : ''}}>4</option>
+                                    <option value="5" {{ $kriteria->bobot == '5' ? 'selected' : ''}}>5</option>
                                 </select>
                             </div>
                         </div>

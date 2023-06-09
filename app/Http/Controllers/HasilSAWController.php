@@ -35,4 +35,14 @@ class HasilSAWController extends Controller
             'kriteria' => $data
         ]);
     }
+    public function kategoriStore(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'atribut' => 'required',
+            'bobot' => 'required'
+        ]);
+        $data = Category::find($id);
+        return view('admin.kategori.index');
+    }
 }
