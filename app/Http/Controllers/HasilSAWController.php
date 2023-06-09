@@ -22,7 +22,7 @@ class HasilSAWController extends Controller
         ]);
     }
     public function kategori(){
-        return view('admin.kategori', [
+        return view('admin.kategori.index', [
             'kriteria' => Kriteria::get()
         ]);
     }
