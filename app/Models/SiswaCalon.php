@@ -9,4 +9,9 @@ class SiswaCalon extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+
+    public function hasil()
+    {
+        return $this->hasOne(Hasilspk::class);
+    }
 }

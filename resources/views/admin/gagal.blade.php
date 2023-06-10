@@ -40,17 +40,17 @@
                             @foreach ($siswacalons as $siswa)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $siswa->name }}</td>
-                                <td>{{ $siswa->nisn }}</td>
-                                <td>{{ $siswa->no_telp }}</td>
-                                <td>{{ $siswa->email }}</td>
-                                <td>{{ $siswa->id_jurusan }}</td>
-                                <td>{{ $siswa->asal_sekolah }}</td>
-                                <td>{{ $siswa->nilai_ipa }}</td>
-                                <td>{{ $siswa->nilai_mtk }}</td>
-                                <td>{{ $siswa->nilai_indo }}</td>
-                                <td>{{ $siswa->nilai_ing }}</td>
-                                <td>{{ $siswa->jarak }}</td>
+                                <td>{{ $siswa->siswacalon->name }}</td>
+                                <td>{{ $siswa->siswacalon->nisn }}</td>
+                                <td>{{ $siswa->siswacalon->no_telp }}</td>
+                                <td>{{ $siswa->siswacalon->email }}</td>
+                                <td>{{ $siswa->siswacalon->jurusan }}</td>
+                                <td>{{ $siswa->siswacalon->asal_sekolah }}</td>
+                                <td>{{ $siswa->siswacalon->nilai_ipa }}</td>
+                                <td>{{ $siswa->siswacalon->nilai_mtk }}</td>
+                                <td>{{ $siswa->siswacalon->nilai_indo }}</td>
+                                <td>{{ $siswa->siswacalon->nilai_ing }}</td>
+                                <td>{{ $siswa->siswacalon->jarak }}</td>
                                 <td>{{ $siswa->status }}</td>
                                 <td>
                                     <a href="#" class="btn btn-info">

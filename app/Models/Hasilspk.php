@@ -10,4 +10,9 @@ class Hasilspk extends Model
     use HasFactory;
     protected $table = 'hasil';
     protected $guarded = ['id'];
+
+    public function siswacalon()
+    {
+        return $this->belongsTo(SiswaCalon::class, 'id');
+    }
 }

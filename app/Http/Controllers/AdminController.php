@@ -2,23 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hasilspk;
 use App\Models\SiswaCalon;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Facades\DB;
 
 
 class AdminController extends Controller
 {
     public function index()
     {
-        $diterima = SiswaCalon::count();
-        $gagal = SiswaCalon::count();
+        $diterima = Hasilspk::where('status', 'Diterima')->count();
+        $gagal = Hasilspk::where('status', 'Gagal')->count();
         $semua = SiswaCalon::count();
         return view('admin.index', [
             'gagal' => $gagal,
             'diterima' => $diterima,
             'semua' => $semua,
-            'siswacalons' => SiswaCalon::all()
+            'hasil' => Hasilspk::with('siswacalon')->get()
         ]);
     }
 
@@ -75,7 +77,7 @@ class AdminController extends Controller
 
     public function diterima()
     {
-        $diterima = SiswaCalon::get();
+        $diterima = Hasilspk::with('siswacalon')->where('status', 'Diterima')->get();
         return view('admin.diterima', [
             'siswacalons' => $diterima
         ]);
@@ -83,7 +85,7 @@ class AdminController extends Controller
 
     public function gagal()
     {
-        $gagal = SiswaCalon::get();
+        $gagal = Hasilspk::with('siswacalon')->where('status', 'Gagal')->get();
         return view('admin.gagal', [
             'siswacalons' => $gagal
         ]);

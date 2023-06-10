@@ -128,23 +128,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($siswacalons as $siswa)
+                            @foreach ($hasil as $hsl)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $siswa->name }}</td>
-                                    <td>{{ $siswa->nisn }}</td>
-                                    <td>{{ $siswa->no_telp }}</td>
-                                    <td>{{ $siswa->email }}</td>
-                                    <td>{{ $siswa->id_jurusan }}</td>
-                                    <td>{{ $siswa->asal_sekolah }}</td>
-                                    <td>{{ $siswa->nilai_ipa }}</td>
-                                    <td>{{ $siswa->nilai_mtk }}</td>
-                                    <td>{{ $siswa->nilai_indo }}</td>
-                                    <td>{{ $siswa->nilai_ing }}</td>
-                                    <td>{{ $siswa->jarak }}</td>
-                                    <td>{{ $siswa->status }}</td>
+                                    <td>{{ $hsl->siswacalon->name }}</td>
+                                    <td>{{ $hsl->siswacalon->nisn }}</td>
+                                    <td>{{ $hsl->siswacalon->no_telp }}</td>
+                                    <td>{{ $hsl->siswacalon->email }}</td>
+                                    <td>{{ $hsl->siswacalon->jurusan }}</td>
+                                    <td>{{ $hsl->siswacalon->asal_sekolah }}</td>
+                                    <td>{{ $hsl->siswacalon->nilai_ipa }}</td>
+                                    <td>{{ $hsl->siswacalon->nilai_mtk }}</td>
+                                    <td>{{ $hsl->siswacalon->nilai_indo }}</td>
+                                    <td>{{ $hsl->siswacalon->nilai_ing }}</td>
+                                    <td>{{ $hsl->siswacalon->jarak }}</td>
+                                    <td>{{ $hsl->status }}</td>
                                     <td>
-                                        <form action="/admin/detail/{{ $siswa->id }}">
+                                        <form action="/admin/detail/{{ $hsl->siswacalon->id }}">
                                             @csrf
                                             <button type="submit" class="btn btn-info mr-2">
                                                 Detail
