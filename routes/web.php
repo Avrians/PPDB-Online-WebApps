@@ -32,6 +32,7 @@ Route::prefix('admin')->group(function () {
     Route::put('/editdata/{id}', [AdminController::class, 'editData']);
     Route::get('/hapusdata/{id}', [PendaftaranController::class, 'hapusData']);
     Route::get('/mendaftar', [AdminController::class, 'mendaftar']);
+    Route::post('/mendaftar/store', [AdminController::class, 'mendaftarStore']);
     Route::get('/diterima', [AdminController::class, 'diterima']);
     Route::get('/gagal', [AdminController::class, 'gagal']);
     Route::get('/tambahdata', [AdminController::class, 'tambahData']);

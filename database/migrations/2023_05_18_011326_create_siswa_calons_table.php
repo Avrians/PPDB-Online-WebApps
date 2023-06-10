@@ -32,7 +32,6 @@ return new class extends Migration
             $table->text('alamat');
             $table->string('jurusan');
             $table->string('berkas')->nullable();
-            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

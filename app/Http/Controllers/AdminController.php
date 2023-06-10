@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\SiswaCalon;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class AdminController extends Controller
 {
     public function index()
     {
-        $diterima = SiswaCalon::where('status', 'Diterima')->count();
-        $gagal = SiswaCalon::where('status', 'Gagal')->count();
+        $diterima = SiswaCalon::count();
+        $gagal = SiswaCalon::count();
         $semua = SiswaCalon::count();
         return view('admin.index', [
             'gagal' => $gagal,
@@ -38,14 +40,42 @@ class AdminController extends Controller
 
     public function mendaftar()
     {
+
         return view('admin.mendaftar', [
             'siswacalons' => SiswaCalon::all()
         ]);
     }
+    public function mendaftarStore(Request $request) {
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'nisn' => 'required|max:10',
+            'no_telp' => 'required|max:13',
+            'agama' => 'required',
+            'tanggal_lahir' => 'required',
+            'tempat_lahir' => 'required',
+            'asal_sekolah' => 'required',
+            'jarak' => 'required',
+            'jurusan' => 'required',
+            'jk' => 'required',
+            'nilai_indo' => 'required',
+            'nilai_ipa' => 'required',
+            'nilai_mtk' => 'required',
+            'nilai_ing' => 'required',
+            'alamat' => 'required',
+            'email' => 'required',
+        ]);
+        // if ($request->file('image')) {
+        //     $validatedData['image'] = $request->file('image')->store('post-images');
+        // }
+        SiswaCalon::create($validatedData);
+
+        Alert::success('Berhasil', 'Data anda sudah terekap, Silahkan tunggu info pengumuman!');
+        return redirect('/admin/mendaftar');
+    }
 
     public function diterima()
     {
-        $diterima = SiswaCalon::where('status', 'Diterima')->get();
+        $diterima = SiswaCalon::get();
         return view('admin.diterima', [
             'siswacalons' => $diterima
         ]);
@@ -53,7 +83,7 @@ class AdminController extends Controller
 
     public function gagal()
     {
-        $gagal = SiswaCalon::where('status', 'Gagal')->get();
+        $gagal = SiswaCalon::get();
         return view('admin.gagal', [
             'siswacalons' => $gagal
         ]);
