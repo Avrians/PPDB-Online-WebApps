@@ -43,17 +43,27 @@
                                         <p class="fs-3">Silahkan masukan email dan password terlebih dahulu</p>
                                         <br>
                                     </div>
+
+                                    {{-- Belum jalan --}}
+                                    {{-- @if (session()->has('loginEror'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                      {{ session('loginEror') }}
+                                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    @endif --}}
+
                                     <form class="user" action="/login" method="POST">
                                         @csrf
                                         @method('post')
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" placeholder="Enter Email Address..." autofocus
                                                 required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" required>
+                                            <input type="password" name="password"
+                                                class="form-control form-control-user" id="exampleInputPassword"
+                                                placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -63,11 +73,11 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                            <button class="btn btn-primary btn-user btn-block" type="submit">Login</button>
+                                        <button class="btn btn-primary btn-user btn-block" type="submit">Login</button>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small" href="#">Forgot Password?</a>
                                     </div>
                                 </div>
                             </div>

@@ -69,7 +69,11 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/login">Logout</a>
+                    <form action="/logout" method="POST">
+                        @method('post')
+                        @csrf
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
                 </div>
             </div>
         </div>

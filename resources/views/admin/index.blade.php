@@ -123,6 +123,7 @@
                                 <th>Nilai B.Ind</th>
                                 <th>Nilai B.Ing</th>
                                 <th>Jarak (km)</th>
+                                <th>Skor</th>
                                 <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
@@ -142,6 +143,7 @@
                                     <td>{{ $hsl->siswacalon->nilai_indo }}</td>
                                     <td>{{ $hsl->siswacalon->nilai_ing }}</td>
                                     <td>{{ $hsl->siswacalon->jarak }}</td>
+                                    <td>{{ $hsl->hasil }}</td>
                                     <td>{{ $hsl->status }}</td>
                                     <td>
                                         <form action="/admin/detail/{{ $hsl->siswacalon->id }}">
