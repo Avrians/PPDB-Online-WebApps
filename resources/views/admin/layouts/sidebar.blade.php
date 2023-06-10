@@ -43,7 +43,7 @@
     <li class="nav-item">
         <a class="nav-link" href="/admin/kategori">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Kategori</span></a>
+            <span>Ketentuan Penilaian</span></a>
     </li>
 
     <!-- Divider -->
