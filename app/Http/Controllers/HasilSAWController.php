@@ -13,7 +13,7 @@ class HasilSAWController extends Controller
     public function index()
     {
         return view('admin.rank', [
-            'hasil' => Hasilspk::get()
+            'hasil' => Hasilspk::orderByDesc('hasil')->get()
         ]);
     }
     public function normalisasi()
@@ -38,11 +38,15 @@ class HasilSAWController extends Controller
     public function kategoriStore(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'name' => 'required|max:255',
             'atribut' => 'required',
             'bobot' => 'required'
         ]);
-        $data = Category::find($id);
-        return view('admin.kategori.index');
+        try {
+            $data = Category::find($id);
+            $data->update($validatedData);
+            return redirect('/admin/kategori')->with('toast_success', 'Absensi Keluar Berhasil');
+        } catch (\Throwable $th) {
+            dd($th->getMessage());
+        }
     }
 }

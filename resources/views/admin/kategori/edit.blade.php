@@ -15,7 +15,8 @@
             </div>
             <div class="card-body">
                 <a href="/admin/kategori/" class="btn btn-warning mb-2">Back</a>
-                <form action="#" method="POST">
+                <form action="/admin/kategori/store/{{ $kriteria->id }}" method="POST">
+                    @method('PUT')
                     @csrf
                     <div class="row">
                         <div class="col-1 my-3">
@@ -24,7 +25,7 @@
                         <div class="col-2 my-3">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" autocomplete="off" autofocus
-                                    required value="{{ $kriteria->name }}">
+                                    required value="{{ $kriteria->name }}" disabled>
                             </div>
                         </div>
                         <div class="col-1 my-3">
@@ -33,8 +34,10 @@
                         <div class="col-2 my-3">
                             <div class="form-group">
                                 <select name="atribut" class="form-control">
-                                    <option value="Cost" {{ $kriteria->atribut == 'Cost' ? 'selected' : ''}}>Cost</option>
-                                    <option value="Benefit" {{ $kriteria->atribut == 'Benefit' ? 'selected' : ''}}>Benefit</option>
+                                    <option value="Cost" {{ $kriteria->atribut == 'Cost' ? 'selected' : '' }}>Cost
+                                    </option>
+                                    <option value="Benefit" {{ $kriteria->atribut == 'Benefit' ? 'selected' : '' }}>Benefit
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -44,11 +47,11 @@
                         <div class="col-2 my-3">
                             <div class="form-group">
                                 <select name="bobot" class="form-control">
-                                    <option value="1" {{ $kriteria->bobot == '1' ? 'selected' : ''}}>1</option>
-                                    <option value="2" {{ $kriteria->bobot == '2' ? 'selected' : ''}}>2</option>
-                                    <option value="3" {{ $kriteria->bobot == '3' ? 'selected' : ''}}>3</option>
-                                    <option value="4" {{ $kriteria->bobot == '4' ? 'selected' : ''}}>4</option>
-                                    <option value="5" {{ $kriteria->bobot == '5' ? 'selected' : ''}}>5</option>
+                                    <option value="1" {{ $kriteria->bobot == '1' ? 'selected' : '' }}>1</option>
+                                    <option value="2" {{ $kriteria->bobot == '2' ? 'selected' : '' }}>2</option>
+                                    <option value="3" {{ $kriteria->bobot == '3' ? 'selected' : '' }}>3</option>
+                                    <option value="4" {{ $kriteria->bobot == '4' ? 'selected' : '' }}>4</option>
+                                    <option value="5" {{ $kriteria->bobot == '5' ? 'selected' : '' }}>5</option>
                                 </select>
                             </div>
                         </div>
