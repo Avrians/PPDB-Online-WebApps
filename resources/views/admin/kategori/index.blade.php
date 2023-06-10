@@ -17,7 +17,25 @@
                     <h6 class="m-0 font-weight-bold text-primary">Score Passing Grade</h6>
                 </div>
                 <div class="card-body">
-
+                    <div class="row">
+                        <div class="col-2 my-3">
+                            <label class="form-label">Nilai</label>
+                        </div>
+                        <div class="col-6 my-3">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" autocomplete="off" autofocus
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-3 my-3">
+                            <button class="btn btn-primary w-100" type="submit">Ubah</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                        <small class="text-danger">Masukan data tidak lebih dari 1 Range 0.01 - 1</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
