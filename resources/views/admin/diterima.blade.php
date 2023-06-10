@@ -33,7 +33,6 @@
                                 <th>Nilai B.Ing</th>
                                 <th>Jarak (km)</th>
                                 <th>Status</th>
-                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,17 +50,12 @@
                                 <td>{{ $siswa->siswacalon->nilai_indo }}</td>
                                 <td>{{ $siswa->siswacalon->nilai_ing }}</td>
                                 <td>{{ $siswa->siswacalon->jarak }}</td>
-                                <td>{{ $siswa->status }}</td>
                                 <td>
-                                    <a href="#" class="btn btn-info">
-                                        Detail
-                                    </a>
-                                    <a href="#" class="btn btn-warning">
-                                        Edit
-                                    </a>
-                                    <a href="#" class="btn btn-danger">
-                                        Hapus
-                                    </a>
+                                    @if ($siswa->status == 'Diterima')
+                                    <span class="btn btn-info btn-sm">{{ $siswa->status }}</span>
+                                    @else
+                                    <span class="btn btn-danger btn-sm">{{ $siswa->status }}</span>
+                                    @endif
                                 </td>
                             </tr>
                             @endforeach

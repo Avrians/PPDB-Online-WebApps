@@ -44,7 +44,7 @@ class AdminController extends Controller
     {
 
         return view('admin.mendaftar', [
-            'siswacalons' => SiswaCalon::all()
+            'siswacalons' => Hasilspk::with('siswacalon')->get()
         ]);
     }
     public function mendaftarStore(Request $request) {
