@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hasilspk;
 use App\Models\SiswaCalon;
 use App\Models\Pendaftaran;
 use Illuminate\Http\Request;
@@ -22,7 +23,7 @@ class PendaftaranController extends Controller
     public function hasil()
     {
         return view('hasilpendaftaran', [
-            'siswacalons' => SiswaCalon::all()
+            'siswacalons' => Hasilspk::orderByDesc('hasil')->with('siswacalon')->get()
         ]);
     }
 

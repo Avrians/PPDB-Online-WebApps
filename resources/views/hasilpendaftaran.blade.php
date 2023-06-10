@@ -27,14 +27,16 @@
                             @foreach ($siswacalons as $siswa)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $siswa->name }}</td>
-                                    <td>{{ $siswa->nisn }}</td>
-                                    <td>{{ $siswa->asal_sekolah }}</td>
-                                    <td>987</td>
+                                    <td>{{ $siswa->siswacalon->name }}</td>
+                                    <td>{{ $siswa->siswacalon->nisn }}</td>
+                                    <td>{{ $siswa->siswacalon->asal_sekolah }}</td>
+                                    <td>{{ $siswa->hasil }}</td>
                                     <td>
-                                        <a href="#" class="btn btn-info mr-2">
-                                            Lulus
-                                        </a>
+                                        @if ($siswa->status == 'Diterima')
+                                            <span class="btn btn-info btn-sm">{{ $siswa->status }}</span>
+                                        @else
+                                            <span class="btn btn-danger btn-sm">{{ $siswa->status }}</span>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
@@ -46,8 +48,8 @@
     </div>
 @endsection
 @push('add-scripts')
-  <!-- Bootstrap core JavaScript-->
-  <script src="{{ url('sbadmin/vendor/jquery/jquery.min.js') }}"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{ url('sbadmin/vendor/jquery/jquery.min.js') }}"></script>
 
     <!-- Page level plugins -->
     <script src="{{ asset('sbadmin/vendor/datatables/jquery.dataTables.min.js') }}"></script>

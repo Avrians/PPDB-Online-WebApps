@@ -31,8 +31,8 @@
                         @foreach ($hasil as $h)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $h->name }}</td>
-                                <td>{{ $h->nisn }}</td>
+                                <td>{{ $h->siswacalon->name }}</td>
+                                <td>{{ $h->siswacalon->nisn }}</td>
                                 <td>{{ $h->hasil }}</td>
                                 <td>
                                     @if ($h->status == 'Diterima')
