@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Hasilspk;
+use App\Models\PassingScore;
 use App\Models\SiswaCalon;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -15,11 +16,13 @@ class AdminController extends Controller
     {
         $diterima = Hasilspk::where('status', 'Diterima')->count();
         $gagal = Hasilspk::where('status', 'Gagal')->count();
+        $passing = PassingScore::get();
         $semua = SiswaCalon::count();
         return view('admin.index', [
             'gagal' => $gagal,
             'diterima' => $diterima,
             'semua' => $semua,
+            'pass' => $passing,
             'hasil' => Hasilspk::with('siswacalon')->get()
         ]);
     }
@@ -47,7 +50,8 @@ class AdminController extends Controller
             'siswacalons' => Hasilspk::with('siswacalon')->get()
         ]);
     }
-    public function mendaftarStore(Request $request) {
+    public function mendaftarStore(Request $request)
+    {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'nisn' => 'required|max:10',
@@ -98,7 +102,8 @@ class AdminController extends Controller
 
         return redirect('/admin/mendaftar')->with('toast_success', 'Data berhasil dihapus');
     }
-    public function tambahData(){
+    public function tambahData()
+    {
         return view('admin.tambahdata');
     }
 

@@ -6,7 +6,9 @@ use App\Models\Category;
 use App\Models\Hasilspk;
 use App\Models\Kriteria;
 use App\Models\Normalisasi;
+use App\Models\PassingScore;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class HasilSAWController extends Controller
 {
@@ -25,7 +27,8 @@ class HasilSAWController extends Controller
     public function kategori()
     {
         return view('admin.kategori.index', [
-            'kriteria' => Kriteria::get()
+            'kriteria' => Kriteria::get(),
+            'pass' => PassingScore::get()
         ]);
     }
     public function kategoriEdit($id)
@@ -45,6 +48,20 @@ class HasilSAWController extends Controller
             $data = Category::find($id);
             $data->update($validatedData);
             return redirect('/admin/kategori')->with('toast_success', 'Absensi Keluar Berhasil');
+        } catch (\Throwable $th) {
+            dd($th->getMessage());
+        }
+    }
+    public function passing(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'nilai' => 'required'
+        ]);
+        try {
+            $data = PassingScore::find($id);
+            $data->update($validatedData);
+            Alert::success('Berhasil', 'Data Passing Score Berhasil Diubah!');
+            return redirect('/admin/kategori');
         } catch (\Throwable $th) {
             dd($th->getMessage());
         }

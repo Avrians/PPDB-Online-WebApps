@@ -21,7 +21,7 @@
                             <div class="col mr-2">
                                 <a href="/admin/kategori" class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="text-decoration:none">Score
                                     Passing Grade</a>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">0.7</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $pass[0]->nilai }}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-calendar fa-2x text-primary"></i>

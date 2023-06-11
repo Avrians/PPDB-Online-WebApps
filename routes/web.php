@@ -38,6 +38,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/tambahdata', [AdminController::class, 'tambahData'])->middleware('auth');
     Route::get('/kategori/edit/{id}', [HasilSAWController::class, 'kategoriEdit'])->middleware('auth');
     Route::put('/kategori/store/{id}', [HasilSAWController::class, 'kategoriStore']);
+    Route::put('/kategori/passing/{id}', [HasilSAWController::class, 'passing']);
     Route::get('/penilaian', [AdminController::class, 'penilaian'])->middleware('auth');
     Route::get('/kategori', [HasilSAWController::class, 'kategori'])->middleware('auth');
     Route::get('/perhitungan', [HasilSAWController::class, 'normalisasi'])->middleware('auth');
