@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('scores', function (Blueprint $table) {
+        Schema::create('passingscore', function (Blueprint $table) {
             $table->id();
-            $table->string('siswa_calons_id');
-            $table->string('categories_id');
+            $table->string('nama');
+            $table->string('nilai');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('scores');
+        Schema::dropIfExists('passingscore');
     }
 };

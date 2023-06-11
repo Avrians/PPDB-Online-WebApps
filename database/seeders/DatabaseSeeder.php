@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Category;
+use App\Models\PassingScore;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,6 +28,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Avriansyah',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('12345')
+        ]);
+
+        PassingScore::create([
+            'nama' => 'nilai minimal',
+            'nilai' => '0.7',
         ]);
 
         $categories = [
