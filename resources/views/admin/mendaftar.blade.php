@@ -70,19 +70,44 @@
                                         <form action="/admin/hapusdata/{{ $siswa->id }}" method="get">
                                             @method('delete')
                                             @csrf
-                                            <button type="submit" class="btn btn-danger mr-2" data-confirm-delete="true">
+                                            <input name="_method" type="hidden" value="DELETE">
+                                            {{-- <button type="submit" class="btn btn-danger mr-2" data-confirm-delete="true"> --}}
+                                            <button type="submit" class="btn btn-xs btn-danger btn-flat show_confirm"
+                                                data-toggle="tooltip" title='Hapus'>
                                                 Hapus
                                             </button>
                                         </form>
-                                        
+
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div><button type="submit" class="btn btn-danger mr-2" data-confirm-delete="true">
         </div>
 
     </div>
 @endsection
+@push('add-scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        $('.show_confirm').click(function(event) {
+            var form = $(this).closest("form");
+            var name = $(this).data("name");
+            event.preventDefault();
+            swal({
+                    title: `Are you sure you want to delete this record?`,
+                    text: "If you delete this, it will be gone forever.",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        form.submit();
+                    }
+                });
+        });
+    </script>
+@endpush
