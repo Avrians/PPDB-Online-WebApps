@@ -30,6 +30,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->middleware('auth');
     Route::get('/detail/{id}', [AdminController::class, 'detail'])->name('detail-siswa');
     Route::put('/editdata/{id}', [AdminController::class, 'editData'])->middleware('auth');
+    Route::put('/updatedata/{id}', [AdminController::class, 'dataUpdate'])->middleware('auth');
     Route::get('/hapusdata/{id}', [PendaftaranController::class, 'hapusData'])->middleware('auth');
     Route::get('/mendaftar', [AdminController::class, 'mendaftar'])->middleware('auth');
     Route::post('/mendaftar/store', [AdminController::class, 'mendaftarStore']);
