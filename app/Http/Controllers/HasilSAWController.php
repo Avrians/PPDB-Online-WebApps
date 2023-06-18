@@ -47,7 +47,8 @@ class HasilSAWController extends Controller
         try {
             $data = Category::find($id);
             $data->update($validatedData);
-            return redirect('/admin/kategori')->with('toast_success', 'Absensi Keluar Berhasil');
+            Alert::success('Berhasil', 'Data berhasil di update!');
+            return redirect('/admin/kategori');
         } catch (\Throwable $th) {
             dd($th->getMessage());
         }

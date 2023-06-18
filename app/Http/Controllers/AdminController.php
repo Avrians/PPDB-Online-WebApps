@@ -79,6 +79,39 @@ class AdminController extends Controller
         return redirect('/admin/mendaftar');
     }
 
+    public function dataUpdate(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'nisn' => 'required|max:10',
+            'no_telp' => 'required|max:13',
+            'agama' => 'required',
+            'tanggal_lahir' => 'required',
+            'tempat_lahir' => 'required',
+            'asal_sekolah' => 'required',
+            'jarak' => 'required',
+            'jurusan' => 'required',
+            'jk' => 'required',
+            'nilai_indo' => 'required',
+            'nilai_ipa' => 'required',
+            'nilai_mtk' => 'required',
+            'nilai_ing' => 'required',
+            'alamat' => 'required',
+            'email' => 'required',
+        ]);
+        // if ($request->file('image')) {
+        //     $validatedData['image'] = $request->file('image')->store('post-images');
+        // }
+        try {
+            $data = SiswaCalon::find($id);
+            $data->update($validatedData);
+            Alert::success('Berhasil', 'Data berhasil di update!');
+            return redirect('/admin/mendaftar');
+        } catch (\Throwable $th) {
+            dd($th->getMessage());
+        }
+    }
+
     public function diterima()
     {
         $diterima = Hasilspk::with('siswacalon')->where('status', 'Diterima')->get();
