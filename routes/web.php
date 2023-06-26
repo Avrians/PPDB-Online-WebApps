@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\HasilSAWController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\PendaftaranController;
-use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HasilSAWController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PendaftaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +54,11 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 // Route Halaman admin
 Route::middleware(['auth'])->group(function () {
+});
+
+Route::get('reset', function () {
+    Artisan::call('route:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('config:cache');
 });

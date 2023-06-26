@@ -165,13 +165,13 @@
                                 <textarea name="alamat" rows="10" class="form-control"></textarea>
                             </div>
                         </div>
-                        <div class="col-9 mb-3">
+                        {{-- <div class="col-9 mb-3">
                             <div class="form-group">
                                 <label for="formFile" class="form-label">Upload Berkas</label>
                                 <p>Mohon untuk mengupload berkas-berkas seperti Ijazah, SKHUN, NISN, Sertifikat Pendukung (Jika ada)</p>
                                 <input class="form-control" type="file" id="berkas" name="berkas">
                               </div>
-                        </div>
+                        </div> --}}
                         <div class="col-12 mb-3">
                             <button class="btn btn-primary w-100" type="submit">Kirim</button>
                         </div>
