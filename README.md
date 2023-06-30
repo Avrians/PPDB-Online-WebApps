@@ -13,9 +13,11 @@ Aplikasi Laravel Sistem Penyeleksian Penerimaan Peserta Didik Baru (PPDB) menggu
 <h3>Halaman Daftar</h3>
 
 ![alt text](https://github.com/Avrians/PPDB-Online-WebApps/blob/master/hasil%20output/daftar-1.png?raw=true)
+
 <h3>Halaman Hasil Seleksi</h3>
 
 ![alt text](https://github.com/Avrians/PPDB-Online-WebApps/blob/master/hasil%20output/hasil.png?raw=true)
+
 <h3>Halaman Admin</h3>
 
 ![alt text](https://github.com/Avrians/PPDB-Online-WebApps/blob/master/hasil%20output/admin/dashboard.png?raw=true)
@@ -23,4 +25,20 @@ Aplikasi Laravel Sistem Penyeleksian Penerimaan Peserta Didik Baru (PPDB) menggu
 ![alt text](https://github.com/Avrians/PPDB-Online-WebApps/blob/master/hasil%20output/admin/rank.png?raw=true)
 
 <h1>Cara Installasi</h1>
-Comming soon
+<h3>Cara Install Projek Ini<h3>
+- Jalankan `git clone https://github.com/Avrians/PPDB-Online-WebApps.git`
+- Jalankan composer install.
+- Jalankan cp .env.example .env or copy .env.example .env.
+- Sesuaikan konfigurasi database anda di .env
+- Jalankan php artisan key:generate
+- Jalankan php artisan migrate --seed
+- Jalankan php artisan serve
+- Buka website sesuai dengan localhost dan portnya di web browser anda contoh `http://localhost:8000`
+```
+user url : localhost:8000
+admin url : localhost:8000/admin
+```
+
+<h3>User dan Password Admin</h3>
+email: admin@gmail.com
+password: *****
