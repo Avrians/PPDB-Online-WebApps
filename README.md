@@ -33,6 +33,8 @@ Aplikasi Laravel Sistem Penyeleksian Penerimaan Peserta Didik Baru (PPDB) menggu
 -   Jalankan php artisan key:generate
 -   Jalankan php artisan migrate --seed
 -   Jalankan php artisan serve
+-   Buka database phpmyadmin
+-   Jalankan query nya untuk membuat view database
 -   Buka website sesuai dengan localhost dan portnya di web browser anda contoh `http://localhost:8000`
 
 ```
