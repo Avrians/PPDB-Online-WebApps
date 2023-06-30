@@ -26,7 +26,7 @@ Aplikasi Laravel Sistem Penyeleksian Penerimaan Peserta Didik Baru (PPDB) menggu
 
 ## Cara Install Projek Ini
 
--   Jalankan `git clone https://github.com/Avrians/PPDB-Online-WebApps.git`
+-   Jalankan `git clone https://github.com/Avrians/PPDB-Online-WebApps`
 -   Jalankan composer install.
 -   Jalankan cp .env.example .env or copy .env.example .env.
 -   Sesuaikan konfigurasi database anda di .env
@@ -44,5 +44,5 @@ admin url : localhost:8000/admin
 
 ```
 email: admin@gmail.com
-password:
+password: 12345
 ```
